@@ -1,0 +1,191 @@
+.container{
+    width: 100%;
+    margin-top: 60px;
+    .banner_box{
+        width: 100%;
+        position: relative;
+        .pc_banner{
+           display: none;
+        }
+        .m_banner{
+            width: 100%;
+        }
+        .banner_cover{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            right: 0px;
+            top: 0px;
+            z-index: 10;
+            background: rgba(255, 255, 255, 0.3);
+            .fuzhu_box{
+                position: relative;
+                width: 100%;
+                height: 100%;
+                .banner_text_box{
+                    position: absolute;
+                    left: 0px;
+                    bottom: 0px;
+                    padding: 15px;
+                    box-sizing: border-box;
+                    .banner_title{
+                        font-size: 30px;
+                        color:#003a95;
+                        font-weight: bold;
+                        margin-bottom: 10px;
+                    }
+                    .text_box{
+                        font-size: 13px;
+                        color:#003a95;
+                        line-height: 24px;
+                    }
+                }
+                .banner_text_box_2{
+                    position: static !important;
+                }
+            }
+        }
+    }
+    .content{
+        width: 100%;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+
+    .pc_status{
+        display: none;
+    }
+    .m_status{
+        display: block;
+    }
+    .content_add{
+        margin-top: 15px;
+    }
+    .brief_introduction{
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 30px;
+        margin-top: 15px;
+        .brief_introduction_header{
+            font-size: 18px;
+            font-weight: bold;
+            letter-spacing:5px;
+            text-align: center;
+            color:#fff;
+            height: 40px;
+            line-height: 40px;
+            background: #003a95;
+        }
+        img{
+            max-width: 100%;
+            border-bottom:10px solid #003a95;
+        }
+        .brief_introduction_text{
+            font-size: 14px;
+            color: #666666;
+            padding: 10px 5px;
+        }
+    }
+
+    .sp_introduction{
+        margin-bottom:35px; 
+        .top_line ,.bottom_line{
+            width: 100%;
+            height: 1px;
+            background: #003a95;
+        }
+        .sp_introduction_box{
+            padding: 15px 0;
+            .sp_introduction_row{
+                margin: 10px 0px;
+                .sp_introduction_title{
+                    font-size: 17px;
+                    font-weight: bold;
+                    color: #003a95;
+                    margin-bottom: 10px;
+                }
+                .sp_introduction_text{
+                    font-size: 12px;
+                    color:#003a95;
+                }
+            }
+        }
+    }
+
+    .add_height{
+        height: 10px;
+    }
+    .change_line{
+        display: inline;
+    }
+    .pc_steps{
+        display: none;
+    }
+    .m_steps{
+        display: inline-block;
+    }
+    .add_padding{
+        padding: 15px;
+        box-sizing: border-box;
+    }
+    .add_margin{
+        margin-bottom: 20px;
+    }
+    .steps_1_box{
+        margin-bottom: 35px;
+        .steps_title{
+            font-size: 18px;
+            font-weight: bold;
+            color:#003a95;
+            line-height: 35px;
+        }
+        .line{
+            width: 60px;
+            height: 2px;
+            background: #003a95;
+            margin-top: 10px;
+        }
+        .steps_img_box{
+            text-align: center;
+            position: relative;
+            img{
+                width: 100%;
+            }
+        }
+    }
+    .item_introduce{
+        box-sizing: border-box;
+        margin-bottom: 20px;
+
+        border-bottom: 10px solid #003a95;
+        .item_introduce_header{
+            font-size: 20px;
+            background: #003a95;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        img{
+            max-width: 100%;
+        }
+    }
+    .bottom_img_box{
+        margin: 0 15px;
+        .bottom_img_header{
+            text-align: center;
+            color: #fff;
+            font-size: 20px;
+            background: #003a95;
+            padding: 10px 0px;
+            box-sizing: border-box;
+        }
+        margin-bottom: 20px;
+
+        border-bottom: 10px solid #003a95;
+        img{
+            max-width: 100%;
+        }
+    }
+
+}

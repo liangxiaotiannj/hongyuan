@@ -10,60 +10,59 @@
 		<title>首页</title>
 		<link rel="stylesheet" href="css/swiper-3.4.2.min.css">
 		<link rel="stylesheet" href="css/animate.min.css">
-		<style>
-			html,body{
-				height: 100%;
-			}
-			body{
-				margin: 0px;
-
-				/* overflow: hidden; */
-			}
-			.container{
-				height: 100%;
-			}
-			.banner_box{
-				height: 100%;
-			}
-			.banner_box img{
-				/* width: 100%; */
-				height: 100%;
-			}
-			.pagination_left{
-				left: 20px !important;
-			}
-			.swiper-pagination-bullet{
-				width: 10px;
-				height: 10px;
-				background: #fff;
-				opacity: 0.5;
-				margin: 6px 0px !important;
-			}
-			.swiper-pagination-bullet-active{
-				opacity: 1;
-			}
-		</style>
+		<link rel="stylesheet" href="css/stylesheet/common.css">
+		<link rel="stylesheet" href="css/stylesheet/home/index_m.css" media="screen and (max-width:767px)">
+		<link rel="stylesheet" href="css/stylesheet/home/index_m.css" media="screen and (min-width:768px) and (max-width: 1024px)">
+		<link rel="stylesheet" href="css/stylesheet/home/index.css" media="screen and (min-width: 1025px)">
 </head>
 
 <body>
+	<header></header>
+
+	<div class="content_header">
+		<div>
+			<img class="logo" src="images/home/LOGO.png" alt="">
+		</div>
+	</div>
     <div class="swiper-container container">
 		<div class="swiper-wrapper">
-		  <div class="swiper-slide banner_box">
-			<img src="images/home/banner_1.png" alt="">
+		  <div class="swiper-slide banner_box banner_1" onclick="jumpToPage('/serviceItems/high-end_experience.html')">
+				<div class="content">
+						<div class="banner_title banner_title_1 ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
+								<img class="birds" src="images/home/birds.png" alt="">
+								高端体验
+						</div>
+						<div class="banner_text_1 ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">我无法掌控未来，却不再有未知的恐惧</div>
+						<div class="banner_text_2 ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">为您的家庭或企业提供细致全面的定制化体检套餐</div>
+				</div>
+				
 		  </div>
-		  <div class="swiper-slide banner_box">
-			<img src="images/home/banner_2.png" alt="">
+		  <div class="swiper-slide banner_box banner_2" onclick="jumpToPage('/serviceItems/international_medical_treatment.html')">
+					<div class="content">
+						<div class="banner_title banner_title_1 ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">国际医疗</div>
+						<div class="banner_text_1 ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">勇敢踏上全新旅程的人，陪伴与专业是我们的使命</div>
+						<div class="banner_text_2 ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">卓越的美国医师团队，赋予您最专业的国际医疗体验</div>
+					</div>
 		  </div>
-		  <div class="swiper-slide banner_box">
-			<img src="images/home/banner_3.png" alt="">
+		  <div class="swiper-slide banner_box banner_3" onclick="jumpToPage('/serviceItems/pregnant_plan.html')">
+					<div class="content">
+						<div class="banner_title banner_title_2 ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">幸孕计划</div>
+						<div class="banner_text_1 ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">赋予有所爱的人，拥抱新生的权利</div>
+						<div class="banner_text_2 ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">非中介机构、全流程陪伴，与您分享拥有子嗣的喜悦</div>
+					</div>
 		  </div>
-		  <div class="swiper-slide banner_box">
-			<img src="images/home/banner_4.png" alt="">
+		  <div class="swiper-slide banner_box banner_4" onclick="jumpToPage('/serviceItems/sub-health_maintain.html')">
+				<div class="content">
+					<div class="banner_title banner_title_2 ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">亚健康管理</div>
+					<div class="banner_text_1 ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">每一个疲惫的灵魂，都需要一场真正的焕新</div>
+					<div class="banner_text_2 ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">修复人体衰老细胞，全面提升免疫系统，改善疲劳状态</div>
+				</div>
 		  </div>
 		</div>
-
 		<div class="swiper-pagination pagination_left"></div>
-	  </div>
+	</div>
+
+		
 	<footer></footer>
 	<script src="js/jquery-1.10.1.min.js"></script>
 	<script src="js/swiper-3.4.2.jquery.min.js"></script>

@@ -1,0 +1,103 @@
+.m_status{
+    display: none;
+}
+.pc_status{
+    display: inline-block;
+}
+
+.container{
+    width: 100%;
+    padding-top: 60px;
+
+    .banner_content{
+        width: 100%;
+        box-sizing: border-box;
+        background: #003a95;
+        overflow: hidden;
+        .img_content{
+            width: 100%;
+            margin: 0 auto;
+            position: relative;
+            img{
+                max-width: 100%;
+            }
+            .banner_text_box{
+                position: absolute;
+                width: 50%;
+                height: 100%;
+                top:0px;
+                right: 0px;
+                background: rgba(0, 0, 0, 0.5);
+                padding: 80px 60px;
+                box-sizing: border-box;
+                .banner_title{
+                    font-size: 30px;
+                    color: #ffffff;
+                    font-weight: bold;
+                    margin-bottom: 20px;
+                }
+                .banner_text{
+                    font-size: 14px;
+                    color: #ffffff;
+                    line-height: 25px;
+                    margin-bottom: 20px;
+                    width: 450px;
+                }
+            }
+        }
+        
+    }
+
+    .card_content{
+        width: 1200px;
+        margin: 0 auto;
+        margin-top: 80px;
+        text-align: center;
+        padding: 0 35px;
+        box-sizing: border-box;
+        overflow: hidden;
+        .card_content_title{
+            border-bottom: 2px solid #003a95;
+            font-size: 24px;
+            color: #003a95;
+            font-weight: bold;
+            margin-bottom: 50px;
+            padding:0 30px;
+            padding-bottom: 30px;
+            box-sizing: border-box;
+        }
+        .left{
+            text-align: left;
+        }
+        .right{
+            text-align: right;
+        }
+        .img_box{
+            width: 50%;
+            vertical-align: middle;
+            display: inline-block;
+            img{
+                max-width: 100%; 
+            }
+            .img_1{
+                margin-left: -20px;
+            }
+            .img_2{
+                margin-left: 20px;
+            }
+            .img_3{
+                margin-left: -70px;
+            }
+            .img_4{
+                margin-left: -20px;
+            }
+        }
+        
+    }
+
+
+
+}
+footer{
+    margin-top: 80px;
+}

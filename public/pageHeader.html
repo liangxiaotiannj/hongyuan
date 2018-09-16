@@ -1,0 +1,872 @@
+<style>
+    /* pc */
+    @media screen and (min-width: 1025px) {
+        .pageHeader{
+            width: 100%;
+            height: 60px;
+            background: #003a95;
+            position: fixed;
+            top:0px;
+            z-index: 1000;
+        }
+        .pageHeader .header_container{
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            height: 100%;
+            padding: 0 25px;
+            /* overflow: hidden; */
+        }
+        .pageHeader .header_container .logo{
+            margin-top: 6px;
+        }
+        .pageHeader .header_container .header_action_box{
+            height: 100%;
+            float: right;
+            /* overflow: hidden; */
+        }
+        .header_action{
+            font-size:16px;
+            line-height: 60px;
+            height: 60px;
+            margin: 0 30px;
+            display: inline-block;
+            text-decoration: none;
+            color:#fff;
+            cursor: pointer;
+            position: relative;
+        }
+        .second_menu{
+            position: absolute;
+            top:50px;
+            left: -40px;
+            width: 150px;
+            padding-top: 20px;
+            display: none;
+        }
+        .second_menu a{
+            display: block;
+            width: 100%;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            color:#fff;
+            font-size: 14px;
+            text-decoration: none;
+            margin-bottom: 2px;
+            background: #003a95;
+            border: 2px solid #003a95;
+        }
+        .second_menu a:hover{
+            color:#003a95;
+            background: #fff;
+        }
+        .menu_btn,.menu_item_box{
+            display: none;
+            overflow: hidden;
+        }
+        /* 注册登录 */
+        .user_box{
+            position: fixed;
+            
+            width: 420px;
+            height: 440px;
+            top:50%;
+            left: 50%;
+            margin-left: -210px;
+            margin-top: -220px;
+            background: rgba(255,255,255,0.7);
+            border-radius: 10px;
+            z-index: 1000;
+            box-sizing: border-box;
+            padding: 40px;
+            display: none;
+        }
+        
+        .user_box_fz{
+            position: relative;
+        }
+        .user_box_close{
+            position: absolute;
+            top:-80px;
+            right: -80px;
+            cursor: pointer;
+        }
+        .user_box .login_box{
+            display: none;
+            
+        }
+
+        .user_box input{
+            font-size: 16px;
+            padding-left: 15px;
+            box-sizing: border-box;
+            width: 100%;
+            height: 40px;
+            outline: none;
+            border-radius:5px; 
+            border:1px solid #dddddd;
+            margin-bottom: 20px;
+        }
+        
+        .login_box .third_party_login_box{
+            width: 100%;
+        }
+        .third_party_login_header{
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .third_party_login_header_title{
+            font-size: 16px;
+            color:#666666;
+            vertical-align: middle;
+            display: inline-block;
+            margin: 0 10px;
+        }
+        .line{
+            width: 100px;
+            display: inline-block;
+            height: 1px;
+            background: #666666;
+            vertical-align: middle;
+        }
+
+        .login_types{
+            width: 100%;
+            text-align: center;
+        }
+        .login_types .type{
+            display: inline-block;
+            width: 30%;
+            cursor: pointer;
+        }
+        .login_types .type p{
+            font-size: 14px;
+        }
+
+        .login_btn,.reg_btn{
+            width: 100%;
+            background: #003a95;
+            font-size: 16px;
+            color: #ffffff;
+            height: 40px;
+            border-radius:5px;
+            margin-top: 10px;
+            outline: none;
+            cursor: pointer; 
+            border: 0px;
+        }
+        .yzm_box{
+            position: relative;
+        }
+        .yzm_btn{
+            position: absolute;
+            width: 120px;
+            height: 40px;
+            background: #003a95;
+            color: #ffffff;
+            font-size: 16px;
+            right: 0;
+            top: 0;
+            cursor: pointer;
+            outline: none;
+            border: 0;
+            border-radius: 0 5px 5px 0;
+        }
+        .change_type_btn{
+            font-size: 14px;
+            margin: 0 auto;
+            display: block;
+            margin-top: 10px;
+            cursor: pointer;
+            text-align: center;
+        }
+        .agree_rmk{
+            font-size: 14px;
+            color:#003a95;
+            text-align: center;
+        }
+        .user_box .reg_box{
+            display: none;
+            
+        }
+
+
+        
+    }
+
+    /* pad */
+    @media screen and (min-width:768px) and (max-width: 1024px){
+        .pageHeader{
+            width: 100%;
+            height: 60px;
+            background: #003a95;
+            position: fixed;
+            top:0px;
+            z-index: 1000;
+        }
+        .pageHeader .header_container{
+            padding: 0 15px;
+            position: relative;
+        }
+        .pageHeader .logo{
+            margin-top: 13px;
+            width: 20px;
+        }
+        .header_action_box{
+            display: none;
+            overflow: hidden;
+        }
+        .menu_btn{
+            float: right;
+            margin-top:22px; 
+        }
+        .menu_btn img{
+            margin-bottom: 3px;
+            width: 30px;
+            display: block;
+        }
+        .menu_item_box{
+            width: 100px;
+            height: 400px;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            background: #003a95;
+            z-index: 200;
+            overflow: hidden;
+            display: none;
+        }
+        .close_box{
+            width: 100%;
+            text-align: right;
+            padding: 20px 15px;
+            box-sizing: border-box;
+        }
+        .close_box img{
+            width: 20px;
+        }
+        .items_list{
+            width: 130px;
+            float: right;
+            padding-right: 15px;
+            text-align: right;
+        }
+        .items_list .li{
+            display: inline-block;
+            width: 70px;
+            color:#fff;
+            margin: 10px 0px;
+            font-size: 16px;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            position: relative;
+        }
+        .items_list .li:hover{
+            border-bottom:1px solid #fff; 
+        }
+        .li_items{
+            position: absolute;
+            left: -120px;
+            top:0px;
+            z-index: 3;
+            display: inline-block;
+            width: 100px;
+            display: none;
+        }
+        .li_items a{
+            display: inline-block;
+            width: 100%;
+            font-size: 14px;
+            color: #fff;
+            text-decoration: none;
+            border: 1px solid #fff;
+            box-sizing: border-box;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .li_items a:hover{
+            background: #fff;
+            color: #003a95;
+        }
+        .second_menu{
+            display: none;
+        }
+
+
+        /* 注册登录 */
+        .user_box{
+            position: fixed;
+            
+            width: 100%;
+            height: 100%;
+            top: 0px;
+            left: 0px;
+            background: rgba(0,0,0,0.7);
+            z-index: 1000;
+            box-sizing: border-box;
+            display: none;
+        }
+        
+        .user_box_fz{
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+        .user_box_close{
+            position: absolute;
+            top:50%;
+
+            right:50%;
+            margin-top: -240px;
+            margin-right: -160px;
+            cursor: pointer;
+            width: 20px;
+            height: 20px;
+        }
+        .user_box .login_box{
+            display: none;
+            
+        }
+
+        .user_box input{
+            font-size: 16px;
+            padding-left: 15px;
+            box-sizing: border-box;
+            width: 100%;
+            height: 40px;
+            outline: none;
+            border-radius:5px; 
+            border:1px solid #dddddd;
+            margin-bottom: 20px;
+        }
+        
+        .login_box .third_party_login_box{
+            width: 100%;
+        }
+        .third_party_login_header{
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .third_party_login_header_title{
+            font-size: 16px;
+            color:#666666;
+            vertical-align: middle;
+            display: inline-block;
+            margin: 0 10px;
+        }
+        .line{
+            width: 40px;
+            display: inline-block;
+            height: 1px;
+            background: #666666;
+            vertical-align: middle;
+        }
+
+        .login_types{
+            width: 100%;
+            text-align: center;
+        }
+        .login_types .type{
+            display: inline-block;
+            width: 30%;
+            cursor: pointer;
+        }
+        .login_types .type p{
+            font-size: 14px;
+        }
+
+        .login_btn,.reg_btn{
+            width: 100%;
+            background: #003a95;
+            font-size: 16px;
+            color: #ffffff;
+            height: 40px;
+            border-radius:5px;
+            margin-top: 10px;
+            outline: none;
+            cursor: pointer; 
+            border: 0px;
+        }
+        .yzm_box{
+            position: relative;
+        }
+        .yzm_btn{
+            position: absolute;
+            width: 120px;
+            height: 40px;
+            background: #003a95;
+            color: #ffffff;
+            font-size: 16px;
+            right: 0;
+            top: 0;
+            cursor: pointer;
+            outline: none;
+            border: 0;
+            border-radius: 0 5px 5px 0;
+        }
+        .change_type_btn{
+            font-size: 14px;
+            margin: 0 auto;
+            display: block;
+            margin-top: 10px;
+            cursor: pointer;
+            text-align: center;
+        }
+        .agree_rmk{
+            font-size: 14px;
+            color:#003a95;
+            text-align: center;
+        }
+        .login_box, .reg_box{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 320px;
+            height: 400px;
+            background: #fff;
+            padding: 20px;
+            margin-left: -160px;
+            margin-top: -200px;
+            border-radius: 5px;
+            box-sizing: border-box;
+            display: none;
+        }
+    }
+
+    /* m */
+    @media screen and (max-width: 767px) {
+        .pageHeader{
+            width: 100%;
+            height: 60px;
+            background: #003a95;
+            position: fixed;
+            top:0px;
+            z-index: 1000;
+        }
+        .pageHeader .header_container{
+            padding: 0 15px;
+            position: relative;
+        }
+        .pageHeader .logo{
+            margin-top: 13px;
+            width: 20px;
+        }
+        .header_action_box{
+            display: none;
+            overflow: hidden;
+        }
+        .menu_btn{
+            float: right;
+            margin-top:22px; 
+        }
+        .menu_btn img{
+            margin-bottom: 3px;
+            width: 30px;
+            display: block;
+        }
+        .menu_item_box{
+            width: 100px;
+            height: 400px;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            background: #003a95;
+            z-index: 200;
+            overflow: hidden;
+            display: none;
+        }
+        .close_box{
+            width: 100%;
+            text-align: right;
+            padding: 20px 15px;
+            box-sizing: border-box;
+        }
+        .close_box img{
+            width: 20px;
+        }
+        .items_list{
+            width: 130px;
+            float: right;
+            padding-right: 15px;
+            text-align: right;
+        }
+        .items_list .li{
+            display: inline-block;
+            width: 70px;
+            color:#fff;
+            margin: 10px 0px;
+            font-size: 16px;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            position: relative;
+        }
+        .items_list .li:hover{
+            border-bottom:1px solid #fff; 
+        }
+        .li_items{
+            position: absolute;
+            left: -120px;
+            top:0px;
+            z-index: 3;
+            display: inline-block;
+            width: 100px;
+            display: none;
+        }
+        .li_items a{
+            display: inline-block;
+            width: 100%;
+            font-size: 14px;
+            color: #fff;
+            text-decoration: none;
+            border: 1px solid #fff;
+            box-sizing: border-box;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .li_items a:hover{
+            background: #fff;
+            color: #003a95;
+        }
+        .second_menu{
+            display: none;
+        }
+
+
+        /* 注册登录 */
+        .user_box{
+            position: fixed;
+            
+            width: 100%;
+            height: 100%;
+            top: 0px;
+            left: 0px;
+            background: rgba(0,0,0,0.7);
+            z-index: 1000;
+            box-sizing: border-box;
+            display: none;
+        }
+        
+        .user_box_fz{
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+        .user_box_close{
+            position: absolute;
+            top:50%;
+
+            right:50%;
+            margin-top: -240px;
+            margin-right: -160px;
+            cursor: pointer;
+            width: 20px;
+            height: 20px;
+        }
+        .user_box .login_box{
+            display: none;
+            
+        }
+
+        .user_box input{
+            font-size: 16px;
+            padding-left: 15px;
+            box-sizing: border-box;
+            width: 100%;
+            height: 40px;
+            outline: none;
+            border-radius:5px; 
+            border:1px solid #dddddd;
+            margin-bottom: 20px;
+        }
+        
+        .login_box .third_party_login_box{
+            width: 100%;
+        }
+        .third_party_login_header{
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .third_party_login_header_title{
+            font-size: 16px;
+            color:#666666;
+            vertical-align: middle;
+            display: inline-block;
+            margin: 0 10px;
+        }
+        .line{
+            width: 40px;
+            display: inline-block;
+            height: 1px;
+            background: #666666;
+            vertical-align: middle;
+        }
+
+        .login_types{
+            width: 100%;
+            text-align: center;
+        }
+        .login_types .type{
+            display: inline-block;
+            width: 30%;
+            cursor: pointer;
+        }
+        .login_types .type p{
+            font-size: 14px;
+        }
+
+        .login_btn,.reg_btn{
+            width: 100%;
+            background: #003a95;
+            font-size: 16px;
+            color: #ffffff;
+            height: 40px;
+            border-radius:5px;
+            margin-top: 10px;
+            outline: none;
+            cursor: pointer; 
+            border: 0px;
+        }
+        .yzm_box{
+            position: relative;
+        }
+        .yzm_btn{
+            position: absolute;
+            width: 120px;
+            height: 40px;
+            background: #003a95;
+            color: #ffffff;
+            font-size: 16px;
+            right: 0;
+            top: 0;
+            cursor: pointer;
+            outline: none;
+            border: 0;
+            border-radius: 0 5px 5px 0;
+        }
+        .change_type_btn{
+            font-size: 14px;
+            margin: 0 auto;
+            display: block;
+            margin-top: 10px;
+            cursor: pointer;
+            text-align: center;
+        }
+        .agree_rmk{
+            font-size: 14px;
+            color:#003a95;
+            text-align: center;
+        }
+        .login_box, .reg_box{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 320px;
+            height: 400px;
+            background: #fff;
+            padding: 20px;
+            margin-left: -160px;
+            margin-top: -200px;
+            border-radius: 5px;
+            box-sizing: border-box;
+            display: none;
+        }
+    }
+
+</style>
+
+<div class="pageHeader">
+    <div class="header_container">
+        <a href="/index.html">
+        <img class="logo" src="/images/serviceItems/international_medical_treatment/logo.png" alt="">
+        </a>
+        <div class="header_action_box">
+            <a href="/globocare.html" class="header_action">鸿愿健康</a>
+            <a href="/characteristic.html?mao=unit" class="header_action">鸿愿特色</a>
+            <a href="/dynamic.html" class="header_action">鸿愿动态</a>
+            <div class="header_action has_second">
+                服务项目
+                <div class="second_menu">
+                    <a href="/serviceItems/high-end_experience.html" class="wow animated fadeInUp" data-wow-duration=".5s" data-wow-delay="0.1s">高端体验</a>
+                    <a href="/serviceItems/international_medical_treatment.html" class="wow animated fadeInUp" data-wow-duration=".7s" data-wow-delay="0.1s">国际医疗</a>
+                    <a href="/serviceItems/pregnant_plan.html" class="wow animated fadeInUp" data-wow-duration=".9s" data-wow-delay="0.1s">幸孕计划</a>
+                    <a href="/serviceItems/sub-health_maintain.html" class="wow animated fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s">亚健康维护</a>
+                </div>
+            </div>
+            <div class="header_action has_second">
+                医疗资源
+                <div class="second_menu">
+                    <a href="/resources/team.html" class="wow animated fadeInUp" data-wow-duration=".5s" data-wow-delay="0.1s">服务团队</a>
+                    <a href="/resources/mechanism.html" class="wow animated fadeInUp" data-wow-duration=".7s" data-wow-delay="0.1s">医疗机构</a>
+                    <a href="/resources/knowledge_center.html" class="wow animated fadeInUp" data-wow-duration=".9s" data-wow-delay="0.1s">科普中心</a>
+                </div>
+            </div>
+            <div href="" class="header_action" onclick="openUserBox()">用户登录</div>
+        </div>
+        <div class="menu_btn" onclick="openMenu()">
+            <img src="/images/serviceItems/international_medical_treatment/menu_icon.png" alt="">
+            <img src="/images/serviceItems/international_medical_treatment/menu_icon.png" alt="">
+            <img src="/images/serviceItems/international_medical_treatment/menu_icon.png" alt="">
+        </div>
+        <div class="menu_item_box">
+            <div class="close_box wow animated fadeInUp" data-wow-duration=".2s" data-wow-delay="0.1s">
+                <img src="/images/home/close.png" alt="" onclick="closeMeun()">
+            </div>
+            <div class="items_list wow animated fadeInRight" data-wow-duration=".2s" data-wow-delay="0.1s">
+                    <a href="/globocare.html?mao=merge" class="li wow animated fadeInUp" data-wow-duration=".2s" data-wow-delay="0.1s">鸿愿健康</a>
+                    <a href="/globocare.html?mao=characteristic" class="li wow animated fadeInUp" data-wow-duration=".4s" data-wow-delay="0.1s">鸿愿特色</a>
+                    <a href="/dynamic.html" class="li wow animated fadeInUp" data-wow-duration=".6s" data-wow-delay="0.1s">鸿愿动态</a>
+                    <div class="has_m_second li wow animated fadeInUp" data-wow-duration=".8s" data-wow-delay="0.1s">
+                        服务项目
+                        <p class="li_items">
+                            <a href="/serviceItems/high-end_experience.html" class="wow animated fadeInUp" data-wow-duration=".2s" data-wow-delay="0.1s">高端体验</a>
+                            <a href="/serviceItems/international_medical_treatment.html" class="wow animated fadeInUp" data-wow-duration=".4s" data-wow-delay="0.1s">国际医疗</a>
+                            <a href="/serviceItems/pregnant_plan.html" class="wow animated fadeInUp" data-wow-duration=".6s" data-wow-delay="0.1s">幸孕计划</a>
+                            <a href="/serviceItems/sub-health_maintain.html" class="wow animated fadeInUp" data-wow-duration=".8s" data-wow-delay="0.1s">亚健康维护</a>
+                        </p>
+                    </div>
+                    <div class="has_m_second li wow animated fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s">
+                        医疗资源
+                        <p class="li_items">
+                            <a href="/resources/team.html" class="wow animated fadeInUp" data-wow-duration=".2s" data-wow-delay="0.1s">服务团队</a>
+                            <a href="/resources/mechanism.html" class="wow animated fadeInUp" data-wow-duration=".4s" data-wow-delay="0.1s">医疗机构</a>
+                            <a href="/resources/knowledge_center.html" class="wow animated fadeInUp" data-wow-duration=".6s" data-wow-delay="0.1s">科普中心</a>
+                        </p>
+                    </div>
+                    <div class="li wow animated fadeInUp" data-wow-duration="1.2s" data-wow-delay="0.1s" onclick="openUserBox()">用户登录</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="user_box">
+    <div class="user_box_fz">
+        <img src="/images/home/close.png" alt="" class="user_box_close" onclick="closeUserBox()">
+        <!-- //登录 -->
+        <div class="login_box">
+                <form action="">
+                    <input type="text" name="userName" placeholder="手机号码">
+                    <input type="password" name="pwd" placeholder="输入密码">
+                    <div class="third_party_login_box">
+                        <div class="third_party_login_header">
+                            <div class="line"></div>
+                            <div class="third_party_login_header_title">其他登录方式</div>
+                            <div class="line"></div>
+                        </div>
+
+                        <div class="login_types">
+                            <div class="type">
+                                <img src="/images/home/qq_icon.png" alt="">
+                                <p>QQ登录</p>
+                            </div>
+                            <div class="type">
+                                <img src="/images/home/weibo_icon.png" alt="">
+                                <p>微博登录</p>
+                            </div>
+                            <div class="type">
+                                <img src="/images/home/wx_icon.png" alt="">
+                                <p>微信登录</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button class="login_btn">
+                        登录
+                    </button>
+                    <a class="change_type_btn" onclick="changeToReg()">注册帐号</a>
+                </form>
+        </div>
+
+        <!-- 注册 -->
+        <div class="reg_box">
+            <form action="">
+                <input type="text" name="userName" placeholder="手机号码">
+                <div class="yzm_box">
+                    <input type="text" name="yzm" placeholder="验证码">
+                    <button class="yzm_btn">获取验证码</button>
+                </div>
+                <input type="password" name="pwd" placeholder="输入密码">
+                <input type="password" name="rpwd" placeholder="输入密码">
+                <p class="agree_rmk">我已阅读同意《用户注册协议》</p>
+                <button class="reg_btn">注册</button>
+                <a class="change_type_btn" onclick="changeToLogin()">已有账户，登录</a>
+            </form>
+        </div>
+
+    </div>
+    
+    
+</div>
+
+<script>
+
+// 顶部
+
+function openMenu(){
+    $('.menu_item_box').show()
+}
+
+function closeMeun(){
+    $('.menu_item_box').hide()
+    $('.menu_item_box').width(100)
+    $('.li_items').hide()
+}
+
+$('.has_m_second').click(function(){
+    $('.menu_item_box').width(230)
+    $('.li_items').hide()
+    $(this).find('.li_items').show()
+})
+
+$('.has_second').hover(function(){
+    $(this).find('.second_menu').show()
+},function(){
+    $(this).find('.second_menu').hide()
+})
+
+
+$('.container').click(function(){
+    closeMeun()
+})
+
+window.onscroll = function(){
+    closeMeun()
+    var isFunction = false
+    try{
+        isFunction = typeof(eval('doScroll'))=="function"
+    }catch(e){
+
+    }
+    if(isFunction) {
+        doScroll()
+    }
+    
+}
+
+// 打开登录注册框
+function openUserBox(){
+    closeMeun()
+    $('.user_box').show()
+    $('.login_box').show()
+}
+// 关闭登录注册
+function closeUserBox(){
+    $('.user_box').hide()
+    $('.reg_box').hide()
+    $('.login_box').hide()
+}
+
+function changeToLogin(){
+    $('.reg_box').hide()
+    $('.login_box').show()
+}
+
+function changeToReg(){
+    $('.reg_box').show()
+    $('.login_box').hide()
+}
+</script>

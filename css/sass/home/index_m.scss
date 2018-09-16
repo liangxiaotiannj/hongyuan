@@ -9,11 +9,11 @@
     left: 20px !important;
 }
 .swiper-pagination-bullets{
-    width: 50px !important;
+    width: 20px !important;
 }
 .swiper-pagination-bullet{
-    width: 10px;
-    height: 10px;
+    width: 5px;
+    height: 5px;
     background: #fff;
     opacity: 0.5;
     margin: 6px 0px !important;
@@ -24,31 +24,33 @@
 
 .banner_1{
     background: url(/images/home/banner_1.png) no-repeat;  
-
+    background-position: 26% 10%;
     background-size:cover;
     text-align: right;
 }
 .banner_2{
     background: url(/images/home/banner_2.png) no-repeat;  
-
+    background-position: 100% 0%;
     background-size:cover;
     text-align: left;
 }
 .banner_3{
     background: url(/images/home/banner_3.png) no-repeat;  
-
+    background-position: 40% 10%;
     background-size:cover;
     text-align: right;
 }
 .banner_4{
-    background: url(/images/home/banner_4.png) no-repeat;  
-
+    background: url(/images/home/m_banner_4.png) no-repeat;  
+    background-position: 10% 10%;
     background-size:cover;
     text-align: left;
+    position: relative;
 }
+
 .pageHeader{
-    background: transparent !important;
-    top:70px !important;
+    // background: transparent !important;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.2),rgba(0,0,0,0)) !important;
     .header_action{
         color:#000 !important;
     }
@@ -65,7 +67,7 @@ footer{
     z-index: 200;
     .page_footer{
         // background: transparent !important;
-        background: linear-gradient(rgba(225,225,225,0),rgba(225,225,225,0.2),rgba(225,225,225,0.6)) !important;
+        background: linear-gradient(rgba(225,225,225,0),rgba(0,0,0,0.2),rgba(0,0,0,0.6)) !important;
         .page_footer_container>a{
             color:#000;
         }
@@ -75,30 +77,35 @@ footer{
 .content_header{
     width: 100%;
     div{
-        max-width: 1200px;
+        // max-width: 1200px;
         margin: 0 auto;
-        padding-top: 60px;
+        // padding-top: 60px;
+        padding:15px; 
+        .logo{
+            width: 120px;
+        }
     }
     position: fixed;
     top:0px;
     z-index: 100;
 }
+
 .content{
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0px 35px;
+    padding: 0px 15px;
     box-sizing: border-box;
+
     .birds{
         position: absolute;
-        right: 120px;
-        bottom:20px;
+        right: 60px;
+        bottom:10px;
+        width: 170px;
     }
 
     .banner_title{
         font-weight: bold;
-        font-size: 72px;
-        margin-top: 230px;
-        margin-bottom: 50px;
+        font-size: 36px;
+        margin-top: 135px;
+        margin-bottom: 25px;
 
         position: relative;
     }
@@ -110,19 +117,24 @@ footer{
     }
     .banner_text_1{
         font-weight: bold;
-        font-size: 30px;
+        font-size: 17px;
         color:#000000;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
     .banner_text_2{
         font-weight: normal;
-        font-size: 16px;
+        font-size: 12px;
         color: #000000;
     }
 }
 
+.contact_type_box{
+    display: none;
+    overflow: hidden;
+}
+
 .menu_bg{
-    width: 50%;
+    width: 60%;
     position: absolute;
     height: 100%;
     background: #003a95;

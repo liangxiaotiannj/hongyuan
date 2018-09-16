@@ -1,0 +1,51 @@
+footer{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    left: 0px;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    padding-top: 80px;
+    .container_header{
+        font-size: 24px;
+        color: #003a95;
+        font-weight: bold;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        letter-spacing:5px;
+    }
+    .bottom_line{
+        width: 50px;
+        height: 4px;
+        background: #003a95;
+        margin-left: 10px;
+        margin-bottom: 20px;
+    }
+    .item_card_box{
+        width: 100%;
+    }
+    .item_card{
+        display: inline-block;
+        width: 50%;
+        padding: 2px;
+        box-sizing: border-box;
+        text-decoration: none;
+        img{
+            max-width: 100%;
+        }
+        .card_text{
+            height: 40px;
+            width: 100%;
+            text-align: center;
+            line-height: 40px;
+            background: #003a95;
+            color: #fff;
+            font-size: 16px;
+            margin: 0px;
+        }
+    }
+}

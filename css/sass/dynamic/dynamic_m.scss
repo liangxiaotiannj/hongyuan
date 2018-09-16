@@ -1,0 +1,315 @@
+.m_status{
+    display: inline-block;
+}
+.pc_status{
+    display: none;
+}
+
+.container{
+    width: 100%;
+    padding-top: 60px;
+
+    .banner_content{
+        width: 100%;
+        box-sizing: border-box;
+        background: #003a95;
+        overflow: hidden;
+        .img_content{
+            width: 100%;
+            position: relative;
+            img{
+                max-width: 100%;
+            }
+            .banner_text_box{
+                position: absolute;
+                width: 100%;
+                bottom:0px;
+                right: 0px;
+                background: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.5));
+                padding: 40px 20px;
+                box-sizing: border-box;
+                .banner_title{
+                    font-size: 30px;
+                    color: #ffffff;
+                    font-weight: bold;
+                    margin-bottom: 20px;
+                }
+                .banner_text{
+                    width: 100%;
+                    max-width:800px;
+                    margin: 0 auto;
+                    font-size: 16px;
+                    color: #ffffff;
+                    line-height: 25px;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        
+    }
+
+    .page_bar{
+        width: 100%;
+        height: 40px;
+        text-align: center;
+        margin-top: 30px;
+        .page_bar_btn{
+            font-size: 13px;
+            width:25px;
+            margin: 5px 0;
+            cursor: pointer;
+            background: transparent;
+            border: 0px;
+            outline: none;
+            vertical-align: middle;
+            color: #003a95;
+            padding: 0px;
+        }
+
+        .first_btn{
+            width: 26px;
+            margin-right: 10px;
+        }
+        .last_btn{
+            width: 26px;
+            margin-left: 10px;
+        }
+    }
+
+    .dynamic_box{
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        box-sizing: border-box;
+        padding: 0 15px;
+        overflow: hidden;
+        .dynamic_box_header{
+            text-align: left;
+            font-size: 24px;
+            color: #666666;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+        .dynamic_content_main{
+            width: 100%;
+            box-sizing: border-box;
+            display: inline-block;
+            border-top: 10px solid #003a95;
+            border-right: 10px solid #003a95;
+            padding: 0 15px;
+            margin-bottom: 20px;
+            .dynamic_content_main_item{
+                height: 50px;
+                width: 100%;
+                line-height: 50px;
+                border-bottom: 1px dashed #666666;
+                overflow: hidden;
+                font-size: 16px;
+                color: #666666;
+                cursor: pointer;
+            }
+        }
+
+        .dynamic_content_second{
+            width: 100%;
+            display: inline-block;
+            height: 100%;
+            vertical-align: top;
+            .dynamic_content_second_card{
+                width: 100%;
+                height: 50%;
+                .dynamic_content_second_body{
+                    width: 100%;
+                    height: 100%;
+                    background: #003a95;
+                    padding: 20px;
+                    box-sizing: border-box;
+                    .dynamic_content_second_title{
+                        font-size: 20px;
+                        color: #fff;
+                        font-weight: normal;
+                        letter-spacing: 5px;
+                    }
+                    .line{
+                        width: 50px;
+                        height: 3px;
+                        background: #fff;
+                        margin: 10px 0px;
+                    }
+                    .dynamic_content_second_item{
+                        color:#fff;
+                        font-size: 14px;
+                        cursor: pointer;
+                        border-bottom: 1px dashed #fff;
+                        line-height: 40px;
+                        height: 40px;
+                        overflow: hidden;
+                    } 
+                }
+            }
+            .card_top{
+                padding-bottom: 10px;
+            }
+            .card_bottom{
+                padding-top: 10px;
+            }
+        }
+
+    }
+    
+    
+    .card_content{
+        margin: 0 auto;
+        margin-bottom: 30px;
+        text-align: center;
+        padding: 0 15px;
+        box-sizing: border-box;
+        overflow: hidden;
+        .card_content_title{
+            border-bottom: 2px solid #666666;
+            font-size: 24px;
+            color: #666666;
+            font-weight: bold;
+            padding:0 30px;
+            padding-bottom: 13px;
+            box-sizing: border-box;
+            letter-spacing:10px;
+            margin-bottom: 15px;
+        }
+        .cards_box{
+
+        }
+        .news_card{
+            width: 100%;
+            display: inline-block;
+            height: 100px;
+            box-sizing: border-box;
+            overflow: hidden;
+            vertical-align: top;
+            padding: 10px 0px;
+            border-bottom: 1px solid #dddddd;
+            img{
+                width: 80px;
+                height: 80px;
+                float: left;
+                background: #003a95;
+            }
+            .card_text{
+                padding-left: 100px;
+                color: #666666;
+                text-align: left;
+                box-sizing: border-box;
+                .card_text_title{
+                    font-size: 18px;
+                    height: 20px;
+                    line-height: 20px;
+                    overflow: hidden;
+                }
+                .card_line{
+                    margin:10px 0px;
+                    width: 20px;
+                    height: 2px;
+                    background: #666666;
+                }
+                .card_text_t{
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+            }
+        }
+        
+    }
+
+
+
+}
+
+
+.konwledeg_info_box{
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    overflow: hidden;
+    .knowledge_headline{
+        height: 600px;
+        padding: 15px;
+        box-sizing: border-box;
+        .knowledge_headline_box{
+            width: 100%;
+            height: 100%;
+            background: #003a95;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .knowledge_headline_title{
+            font-size: 24px;
+            height: 30px;
+            line-height: 30px;
+            overflow: hidden;
+            // margin-top: 25px;
+            color: #ffffff;
+        }
+        .knowledge_headline_line{
+            margin:20px 0 30px 0;
+            width: 40px;
+            height: 2px;
+            background: #ffffff;
+        }
+        .knowledge_headline_item{
+            padding-bottom:20px;
+            box-sizing: border-box;
+            overflow: hidden; 
+            height: 440px;
+            .item{
+                font-size: 16px;
+                color: #ffffff;
+                line-height: 40px;
+                height: 40px;
+                border-bottom: 1px dashed #ffffff;
+                overflow: hidden;
+                cursor: pointer;
+                box-sizing: border-box;
+            }
+        }
+    }
+
+    .knowledge_center{
+        width: 100%;
+        // overflow: hidden;
+        .knowledge_card{
+            display: inline-block;
+            // width: 33.3%;
+            height: 280px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            padding: 15px;
+            .img_box{
+                background: #666666;
+                height: 180px;
+                width: 100%;
+                max-width: 100%;
+            }
+            .knowledge_info{
+                background: #003a95;
+                width: 100%;
+                height: 100px;
+
+                box-sizing: border-box;
+                padding: 20px;
+                .knowledge_title{
+                    font-size: 18px;
+                    color: #ffffff;
+                    height: 25px;
+                    overflow: hidden;
+                }
+                .knowledge_text{
+                    font-size: 14px;
+                    color: #ffffff;
+                    overflow: hidden;
+                    height: 40px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,261 @@
+<style>
+/* pc */
+@media screen and (min-width: 1025px) {
+.contact_type_box{
+    width: 50px;
+    position: fixed;
+    right: 15px;
+    bottom: 255px;
+    z-index: 100;
+    text-align: center;
+}
+.contact_type_icon{
+    width: 46px;
+    height: 46px;
+    border-left: 2px solid #000000;
+    border-right: 2px solid #000000;
+    border-top: 2px solid #000000;
+    position: relative;
+    cursor: pointer;
+}
+.contact_type_icon img{
+    margin-top:15px; 
+}
+.content_type{
+    position: absolute;    
+    border-left: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+    border-top: 2px solid #000000;
+    font-size: 15px;
+    right: 48px;
+    top: -2px;
+    z-index: 100;
+    box-sizing: border-box;
+    text-align: center;
+    display: none;
+    width: 150px;
+}
+.content_type .wx{
+    font-size: 15px;
+    line-height: 50px;
+}
+
+.content_type img{
+    margin: 0px;
+}
+
+.content_type_1{
+    height: 50px;
+    line-height: 46px;
+}
+.content_type_2{
+    height: 146px;
+}
+.content_type_3{
+    height: 98px;
+}
+.content_type_3 .bx{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.content_type_3 .bx div{
+    width: 100%;
+    height: 50%;
+    font-size: 15px;
+    line-height: 50px;
+}
+.content_type_3 .bx span{
+    position: absolute;
+    display: inline-block;
+    width: 20px;
+    height: 2px;
+    background: #000000;
+    left: 50%;
+    top: 50%;
+    margin-left: -10px;
+    margin-top: -1px;
+}
+
+.icon_border_bottom{
+    border-bottom: 2px solid #000000;
+}
+
+.page_footer{
+    width: 100%;
+    height: 100px;
+    background: #003a95;
+}
+.page_footer_container{
+    width: 100%;
+    max-width: 1200px;
+    line-height: 100px;
+    margin: 0 auto;
+    padding: 0 45px;
+    box-sizing: border-box;
+}
+.page_footer_container>a{
+    font-size: 16px;
+    color:#fff;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 35px;
+}
+.page_footer_container .right_link{
+    float: right;
+}
+.m_link_box{
+    display: none;
+}
+}
+    
+/* pad */
+@media screen and (min-width:768px) and (max-width: 1024px){
+    .contact_type_box{
+        display: none;
+    }
+    .page_footer{
+        width: 100%;
+        height: 60px;
+        background: #003a95;
+    }
+    .page_footer_container{
+        
+    }
+    .page_footer_container>a{
+        display: none;
+    }
+    .page_footer_container .m_link_box{
+        text-align: center;
+        padding: 15px 0px;
+    }
+    .m_link_box a{
+        color: #fff;
+        text-decoration: none;
+        vertical-align: middle;
+        display: inline-block;
+        width: 31%;
+    }
+    .m_link_box a img{
+        vertical-align: middle;
+        width:22px ;
+        margin-right: 5px;
+    }
+    .m_link_box a span{
+
+        font-size: 16px;
+        vertical-align: middle;
+    }
+    .m_link_box .cener_line{
+        border-left: 1px solid #fff;
+        border-right: 1px solid #fff;
+    }
+    .sp_icon{
+        width: 15px !important;
+    }    
+}
+    
+/* m */
+@media screen and (max-width: 767px) {
+    .contact_type_box{
+        display: none;
+    }
+    .page_footer{
+        width: 100%;
+        height: 60px;
+        background: #003a95;
+    }
+    .page_footer_container{
+        
+    }
+    .page_footer_container>a{
+        display: none;
+    }
+    .page_footer_container .m_link_box{
+        text-align: center;
+        padding: 15px 0px;
+    }
+    .m_link_box a{
+        color: #fff;
+        text-decoration: none;
+        vertical-align: middle;
+        display: inline-block;
+        width: 31%;
+    }
+    .m_link_box a img{
+        vertical-align: middle;
+        width:22px ;
+        margin-right: 5px;
+    }
+    .m_link_box a span{
+
+        font-size: 16px;
+        vertical-align: middle;
+    }
+    .m_link_box .cener_line{
+        border-left: 1px solid #fff;
+        border-right: 1px solid #fff;
+    }
+    .sp_icon{
+        width: 15px !important;
+    }
+}
+
+</style>
+
+<div class="page_footer">
+    <div class="page_footer_container">
+        <a href="">合作医院</a>
+        <!-- <a href="">客户案例</a> -->
+        <a href="">科普中心</a>
+        <a href="">友情链接</a>
+        <a href="" class="right_link">联系我们</a>
+        <div class="m_link_box">
+            <a href="/globocare.html?mao=merge"><img  class="sp_icon" src="/images/serviceItems/international_medical_treatment/logo.png" alt=""><span>鸿愿健康</span></a>
+            <a href="" class="cener_line"><img src="/images/serviceItems/international_medical_treatment/online.png" alt=""><span>在线咨询</span></a>
+            <a href="/serviceItems/service_items.html"><img src="/images/serviceItems/international_medical_treatment/service.png" alt=""><span>服务项目</span></a>
+        </div>
+    </div>
+</div>
+
+<div class="contact_type_box wow animated fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+		<div class="contact_type_icon">
+			<img src="/images/home/online.png" alt="">
+			<div class="content_type content_type_1 wow animated fadeInRight" data-wow-duration=".2s" data-wow-delay="0.1s">
+				在线咨询
+			</div>
+		</div>
+		<div class="contact_type_icon">
+				<img src="/images/home/wx.png" alt="">
+				<div class="content_type content_type_2 wow animated fadeInRight" data-wow-duration=".2s" data-wow-delay="0.1s">
+						<div class="wx">官方微信</div>
+						<img src="/images/home/wx_scan_code.png" alt="">
+				</div>
+		</div>
+		<div class="contact_type_icon">
+			<img src="/images/home/phone.png" alt="">
+				<div class="content_type content_type_3 wow animated fadeInRight" data-wow-duration=".2s" data-wow-delay="0.1s">
+						<div class="bx">
+							<div>电话咨询</div>
+							<span></span>
+							<div>021 6237-8399</div>
+						</div>
+				</div>
+		</div>
+		<div class="contact_type_icon icon_border_bottom">
+			<img src="/images/home/msg.png" alt="">
+				<div class="content_type content_type_1 wow animated fadeInRight" data-wow-duration=".2s" data-wow-delay="0.1s">
+						留言咨询
+				</div>
+		</div>
+</div>
+<script>
+    // 底部
+$('.contact_type_icon').hover(function(){
+    $(this).find('.content_type').show();
+},function(){
+    $(this).find('.content_type').hide();
+})
+
+</script>

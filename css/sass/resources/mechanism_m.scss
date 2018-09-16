@@ -1,0 +1,74 @@
+.m_status{
+    display: block;
+}
+.pc_status{
+    display: none;
+}
+
+.container{
+    width: 100%;
+    padding-top:60px; 
+    .banner_content{
+        width: 100%;
+        box-sizing: border-box;
+        background: #003a95;
+        overflow: hidden;
+        padding: 40px 0px ;
+        .img_content{
+            margin: 0 auto;
+            position: relative;
+            img{
+                max-width: 100%;
+            }
+            .banner_text_box{
+                position: absolute;
+                bottom:30px;
+                left: 0px;
+                padding-left: 15px;
+                box-sizing: border-box;
+                .banner_title{
+                    font-size: 30px;
+                    color: #ffffff;
+                    font-weight: bold;
+                    margin-bottom: 10px;
+                }
+                .line{
+                    width: 40px;
+                    height: 2px;
+                    background: #ffffff;
+                    margin-bottom: 30px;
+                }
+                .banner_text{
+                    font-size: 14px;
+                    color: #ffffff;
+                    line-height: 30px;
+                }
+            }
+        }
+        
+    }
+
+    .card_content{
+        margin: 0 auto;
+        margin-top: 40px;
+        text-align: center;
+        padding: 0 15px;
+        box-sizing: border-box;
+        .card_content_title{
+            padding-bottom: 20px;
+            border-bottom: 2px solid #003a95;
+            font-size: 24px;
+            color: #003a95;
+            margin-bottom: 25px;
+            font-weight: bold;
+        }
+        img{
+            max-width: 100%;
+            margin-bottom: 30px;
+        }
+        
+    }
+
+
+
+}
