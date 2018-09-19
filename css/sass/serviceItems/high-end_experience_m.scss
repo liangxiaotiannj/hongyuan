@@ -110,6 +110,7 @@
         }
         img{
             max-width: 100%;
+            border-bottom: 10px solid #003a95;
         }
         .brief_introduction_text{
             padding: 10px 5px;
@@ -237,11 +238,23 @@
         border-top:10px solid #003a95;
         border-bottom:10px solid #003a95;
         padding:30px 0px; 
+        position: relative;
         .steps_title{
             font-size: 18px;
             font-weight: bold;
             color:#003a95;
             line-height: 35px;
+        }
+        .add_position_1{
+            position: absolute;
+            top: 20px;
+            left: 0px;
+        }
+
+        .add_position_2{
+            position: absolute;
+            top: 90px;
+            left: 0px;
         }
         .line{
             width: 60px;

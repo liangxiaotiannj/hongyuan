@@ -4,7 +4,9 @@ function autoShowSteps(nums){
     // if(nums>11){
         // nums = 0
     // }
-    // console.log(nums)
+    if(document.body.clientWidth<768){
+        nums = 11
+    }
     $('.img_r').attr('src','/images/serviceItems/pregnant_plan/bottom_steps_'+nums+'.png')
     // nums++;
 }

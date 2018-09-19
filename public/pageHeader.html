@@ -1,6 +1,9 @@
 <style>
     /* pc */
     @media screen and (min-width: 1025px) {
+        .showStatus{
+            display: inline-block !important;
+        }
         .pageHeader{
             width: 100%;
             height: 60px;
@@ -15,6 +18,7 @@
             margin: 0 auto;
             height: 100%;
             padding: 0 25px;
+            position: relative;
             /* overflow: hidden; */
         }
         .pageHeader .header_container .logo{
@@ -61,9 +65,80 @@
             color:#003a95;
             background: #fff;
         }
-        .menu_btn,.menu_item_box{
+        .menu_btn{
             display: none;
             overflow: hidden;
+        }
+        
+        .menu_item_box{
+            width: 100px;
+            height: 400px;
+            position: absolute;
+            top: 0px;
+            right: 30px;
+            background: #003a95;
+            z-index: 20000;
+            /* overflow: hidden; */
+            display: none;
+        }
+        .close_box{
+            width: 100%;
+            text-align: right;
+            padding: 20px 15px;
+            box-sizing: border-box;
+            cursor: pointer;
+        }
+        .close_box img{
+            width: 20px;
+        }
+        .items_list{
+            width: 130px;
+            float: right;
+            padding-right: 15px;
+            text-align: right;
+        }
+        .items_list .li{
+            display: inline-block;
+            width: 70px;
+            color:#fff;
+            margin: 10px 0px;
+            font-size: 16px;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            position: relative;
+            cursor: pointer;
+        }
+        .items_list .li:hover{
+            border-bottom:1px solid #fff; 
+        }
+        .li_items{
+            position: absolute;
+            left: -170px;
+            top:0px;
+            z-index: 3;
+            display: inline-block;
+            width: 150px;
+            display: none;
+        }
+        .li_items a{
+            display: inline-block;
+            width: 100%;
+            font-size: 14px;
+            color: #fff;
+            text-decoration: none;
+            border: 1px solid #fff;
+            box-sizing: border-box;
+            text-align: center;
+            margin-bottom: 10px;
+            height: 30px;
+            line-height: 30px;
+        }
+        .li_items a:hover{
+            background: #fff;
+            color: #003a95;
+        }
+        .second_menu{
+            display: none;
         }
         /* 注册登录 */
         .user_box{
@@ -198,6 +273,9 @@
 
     /* pad */
     @media screen and (min-width:768px) and (max-width: 1024px){
+        .showStatus{
+            display: inline-block !important;
+        }
         .pageHeader{
             width: 100%;
             height: 60px;
@@ -222,10 +300,17 @@
             float: right;
             margin-top:22px; 
         }
-        .menu_btn img{
+        /* .menu_btn img{
             margin-bottom: 3px;
             width: 30px;
             display: block;
+        } */
+        .menu_btn div{
+            margin-bottom: 3px;
+            width: 30px;
+            height: 3px;
+            display: block;
+            background: #fff;
         }
         .menu_item_box{
             width: 100px;
@@ -438,6 +523,9 @@
 
     /* m */
     @media screen and (max-width: 767px) {
+        .showStatus{
+            display: none !important;
+        }
         .pageHeader{
             width: 100%;
             height: 60px;
@@ -451,8 +539,8 @@
             position: relative;
         }
         .pageHeader .logo{
-            margin-top: 13px;
-            width: 20px;
+            margin-top: 5px;
+            width: 30px;
         }
         .header_action_box{
             display: none;
@@ -462,14 +550,22 @@
             float: right;
             margin-top:22px; 
         }
-        .menu_btn img{
+        /* .menu_btn img{
             margin-bottom: 3px;
+            height: 3px;
             width: 30px;
             display: block;
+        } */
+        .menu_btn div{
+            margin-bottom: 3px;
+            width: 30px;
+            height: 3px;
+            display: block;
+            background: #fff;
         }
         .menu_item_box{
             width: 100px;
-            height: 400px;
+            height: 320px;
             position: absolute;
             top: 0px;
             right: 0px;
@@ -675,7 +771,6 @@
             display: none;
         }
     }
-
 </style>
 
 <div class="pageHeader">
@@ -704,12 +799,15 @@
                     <a href="/resources/knowledge_center.html" class="wow animated fadeInUp" data-wow-duration=".9s" data-wow-delay="0.1s">科普中心</a>
                 </div>
             </div>
-            <div href="" class="header_action" onclick="openUserBox()">用户登录</div>
+            <!-- <div href="" class="header_action" onclick="openUserBox()">用户登录</div> -->
         </div>
         <div class="menu_btn" onclick="openMenu()">
+            <!-- <img src="/images/serviceItems/international_medical_treatment/menu_icon.png" alt="">
             <img src="/images/serviceItems/international_medical_treatment/menu_icon.png" alt="">
-            <img src="/images/serviceItems/international_medical_treatment/menu_icon.png" alt="">
-            <img src="/images/serviceItems/international_medical_treatment/menu_icon.png" alt="">
+            <img src="/images/serviceItems/international_medical_treatment/menu_icon.png" alt=""> -->
+            <div></div>
+            <div></div>
+            <div></div>
         </div>
         <div class="menu_item_box">
             <div class="close_box wow animated fadeInUp" data-wow-duration=".2s" data-wow-delay="0.1s">
@@ -717,7 +815,7 @@
             </div>
             <div class="items_list wow animated fadeInRight" data-wow-duration=".2s" data-wow-delay="0.1s">
                     <a href="/globocare.html?mao=merge" class="li wow animated fadeInUp" data-wow-duration=".2s" data-wow-delay="0.1s">鸿愿健康</a>
-                    <a href="/globocare.html?mao=characteristic" class="li wow animated fadeInUp" data-wow-duration=".4s" data-wow-delay="0.1s">鸿愿特色</a>
+                    <a href="/globocare.html?mao=characteristic" class="li showStatus wow animated fadeInUp" data-wow-duration=".4s" data-wow-delay="0.1s">鸿愿特色</a>
                     <a href="/dynamic.html" class="li wow animated fadeInUp" data-wow-duration=".6s" data-wow-delay="0.1s">鸿愿动态</a>
                     <div class="has_m_second li wow animated fadeInUp" data-wow-duration=".8s" data-wow-delay="0.1s">
                         服务项目
@@ -736,7 +834,7 @@
                             <a href="/resources/knowledge_center.html" class="wow animated fadeInUp" data-wow-duration=".6s" data-wow-delay="0.1s">科普中心</a>
                         </p>
                     </div>
-                    <div class="li wow animated fadeInUp" data-wow-duration="1.2s" data-wow-delay="0.1s" onclick="openUserBox()">用户登录</div>
+                    <!-- <div class="li wow animated fadeInUp" data-wow-duration="1.2s" data-wow-delay="0.1s" onclick="openUserBox()">用户登录</div> -->
             </div>
         </div>
     </div>
@@ -814,6 +912,20 @@ function closeMeun(){
     $('.menu_item_box').hide()
     $('.menu_item_box').width(100)
     $('.li_items').hide()
+
+    if(document.body.clientWidth<768){
+            
+    }else{
+        var isFunction = false
+        try{
+            isFunction = typeof(eval('indexCloseMenu'))=="function"
+        }catch(e){
+
+        }
+        if(isFunction) {
+            indexCloseMenu()
+        }
+    }
 }
 
 $('.has_m_second').click(function(){

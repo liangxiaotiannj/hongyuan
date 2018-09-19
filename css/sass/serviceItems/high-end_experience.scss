@@ -238,11 +238,24 @@
         box-shadow: 5px 10px 20px #ebebeb;
         margin-bottom: 170px;
         box-sizing: border-box;
+        position: relative;
         .steps_title{
             font-size: 30px;
             font-weight: bold;
             color:#003a95;
             line-height: 50px;
+        }
+
+        .add_position_1{
+            position: absolute;
+            top: 60px;
+            left: 60px;
+        }
+
+        .add_position_2{
+            position: absolute;
+            top: 160px;
+            left: 60px;
         }
         .line{
             width: 120px;

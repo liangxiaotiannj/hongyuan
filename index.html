@@ -8,12 +8,13 @@
 		<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<title>首页</title>
+		
+		<link rel="stylesheet" href="/css/stylesheet/common.css">
 		<link rel="stylesheet" href="css/swiper-3.4.2.min.css">
-		<link rel="stylesheet" href="css/animate.min.css">
-		<link rel="stylesheet" href="css/stylesheet/common.css">
-		<link rel="stylesheet" href="css/stylesheet/home/index_m.css" media="screen and (max-width:767px)">
-		<link rel="stylesheet" href="css/stylesheet/home/index_m.css" media="screen and (min-width:768px) and (max-width: 1024px)">
-		<link rel="stylesheet" href="css/stylesheet/home/index.css" media="screen and (min-width: 1025px)">
+		<link rel="stylesheet" href="/css/animate.min.css">
+		<link rel="stylesheet" href="/css/stylesheet/home/index_m.css" media="screen and (max-width:767px)">
+		<link rel="stylesheet" href="/css/stylesheet/home/index_m.css" media="screen and (min-width:768px) and (max-width: 1024px)">
+		<link rel="stylesheet" href="/css/stylesheet/home/index.css" media="screen and (min-width: 1025px)">
 </head>
 
 <body>
@@ -22,7 +23,15 @@
 	<div class="content_header">
 		<div>
 			<img class="logo" src="images/home/LOGO.png" alt="">
+			<p class="pc_menu" onclick="indexOpenMenu()">
+					<img src="/images/home/menu.png" alt="">
+					<img src="/images/home/menu.png" alt="">
+					<img src="/images/home/menu.png" alt="">
+			</p>
 		</div>
+	</div>
+	<div class="index_mask">
+
 	</div>
     <div class="swiper-container container">
 		<div class="swiper-wrapper">
@@ -67,6 +76,8 @@
 	<script src="js/jquery-1.10.1.min.js"></script>
 	<script src="js/swiper-3.4.2.jquery.min.js"></script>
 	<script src="js/swiper.animate1.0.2.min.js"></script>
+	<script src="/js/wow.js"></script>
+	<script src="/js/common.js"></script>
 	<script src="js/home/index.js"></script>
 </body>
 </html>

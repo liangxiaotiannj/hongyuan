@@ -8,6 +8,8 @@
     bottom: 255px;
     z-index: 100;
     text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    /* background: rgba(0, 0, 0, 0.5) */
 }
 .contact_type_icon{
     width: 46px;
@@ -34,6 +36,7 @@
     text-align: center;
     display: none;
     width: 150px;
+    background: rgba(255, 255, 255, 0.1);
 }
 .content_type .wx{
     font-size: 15px;
@@ -84,16 +87,17 @@
 
 .page_footer{
     width: 100%;
-    height: 100px;
+    height: 60px;
     background: #003a95;
 }
 .page_footer_container{
     width: 100%;
     max-width: 1200px;
-    line-height: 100px;
+    line-height: 60px;
     margin: 0 auto;
     padding: 0 45px;
     box-sizing: border-box;
+    height: 100%;
 }
 .page_footer_container>a{
     font-size: 16px;
@@ -121,7 +125,7 @@
         background: #003a95;
     }
     .page_footer_container{
-        
+        height: 45px;
     }
     .page_footer_container>a{
         display: none;
@@ -159,28 +163,29 @@
 /* m */
 @media screen and (max-width: 767px) {
     footer{
-        padding-top: 60px;
+        padding-top: 45px;
     }
     .contact_type_box{
         display: none;
     }
     .page_footer{
         width: 100%;
-        height: 60px;
+        height: 45px;
         background: #003a95;
         position: fixed;
         bottom: 0px;
         left: 0px;
+        z-index: 1000;
     }
     .page_footer_container{
-        
+        height: 100%;
     }
     .page_footer_container>a{
         display: none;
     }
     .page_footer_container .m_link_box{
         text-align: center;
-        padding: 15px 0px;
+        padding: 10px 0px;
     }
     .m_link_box a{
         color: #fff;

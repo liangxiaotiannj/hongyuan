@@ -3,9 +3,9 @@ setTimeout(function(){
     var mao = getUrlParams('mao');
     if(!!mao){
         $('.embed_container').load('/public/characteristic.html',function(){
-            if(mao=='characteristic'){
-                $("html,body").animate({scrollTop:$('#characteristic').offset().top-60},100);
-            }
+            // if(mao=='characteristic'){
+            //     $("html,body").animate({scrollTop:$('#characteristic').offset().top-60},100);
+            // }
         });
     }
 },500)

@@ -49,14 +49,18 @@
 }
 
 .pageHeader{
-    // background: transparent !important;
-    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.2),rgba(0,0,0,0)) !important;
+    // background: rgba(255, 255, 255,0.5) !important;
+    background: rgba(0, 0, 0,0.5) !important;
+    // background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.2),rgba(0,0,0,0)) !important;
     .header_action{
         color:#000 !important;
     }
     .logo{
         display: none;
     }
+    // .menu_btn div{
+    //     background: #000 !important;
+    // }
 }
 
 footer{
@@ -67,7 +71,9 @@ footer{
     z-index: 200;
     .page_footer{
         // background: transparent !important;
-        background: linear-gradient(rgba(225,225,225,0),rgba(0,0,0,0.2),rgba(0,0,0,0.6)) !important;
+        // background: rgba(255, 255, 255,0.5) !important;
+        background: rgba(0, 0, 0,0.5) !important;
+        // background: linear-gradient(rgba(225,225,225,0),rgba(0,0,0,0.2),rgba(0,0,0,0.6)) !important;
         .page_footer_container>a{
             color:#000;
         }
@@ -75,19 +81,23 @@ footer{
 }
 
 .content_header{
-    width: 100%;
+    width: 150px;
     div{
         // max-width: 1200px;
-        margin: 0 auto;
+        // margin: 0 auto;
         // padding-top: 60px;
-        padding:15px; 
+        padding:10px; 
         .logo{
             width: 120px;
+        }
+        .pc_menu{
+            display: none;
+            overflow: hidden;
         }
     }
     position: fixed;
     top:0px;
-    z-index: 100;
+    z-index: 10000;
 }
 
 .content{

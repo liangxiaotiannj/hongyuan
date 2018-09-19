@@ -49,6 +49,7 @@
 .pageHeader{
     background: transparent !important;
     top:70px !important;
+    display: none;
     .header_action{
         color:#000 !important;
     }
@@ -78,6 +79,19 @@ footer{
         max-width: 1200px;
         margin: 0 auto;
         padding-top: 60px;
+        
+        .pc_menu{
+            float: right;
+            margin-top: 30px;
+            cursor: pointer;
+            width: 50px;
+            img{
+                display: block;
+                height: 4px;
+                margin-bottom: 5px;
+                width: 100%;
+            }
+        }
     }
     position: fixed;
     top:0px;
@@ -129,5 +143,21 @@ footer{
     z-index: 200;
     top: 0;
     right: 0px;
+    display: none;
+}
+.page_footer{
+    display: none !important;
+}
+.header_action_box{
+    display: none;
+}
+.index_mask{
+    position: fixed;
+    width: 50%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    background: #003a95;
+    z-index: 100;
     display: none;
 }

@@ -18,4 +18,6 @@ var wow = new WOW({
     mobile: true,
     live: true
 });
-wow.init();
+setTimeout(function(){
+  wow.init();
+},50)

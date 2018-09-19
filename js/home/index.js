@@ -1,6 +1,3 @@
-$('header').load('/public/pageHeader.html')
-
-$('footer').load('/public/pageFooter.html')
 
 var mySwiper = new Swiper('.swiper-container', {
     direction: 'vertical',
@@ -16,30 +13,26 @@ var mySwiper = new Swiper('.swiper-container', {
       swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
     },
     onTransitionStart: function(swiper){
-      closeMeun()
+        closeMeun()
     }
 });
 
 
 
-function openMenu(){
-    $('.contact_type_box').hide();
-    $('.menu_bg').show();
-    $('.menu_box_li').show();
-}
 
-function closeMenu(){
+function indexCloseMenu(){
+    $('.pageHeader').hide();
     $('.contact_type_box').show();
-    $('.menu_bg').hide();
-    $('.menu_box_li').hide();
+    $('.index_mask').hide();
 }
-
-$('.product_show').hover(function(){
-    $('.product_box').show();
-},function(){
-    $('.product_box').hide();
-})
 
 function jumpToPage(href){
     window.location.href = href;
+}
+
+function indexOpenMenu(){
+    $('.pageHeader').show();
+    $('.contact_type_box').hide();
+    $('.index_mask').show();
+    openMenu();
 }
