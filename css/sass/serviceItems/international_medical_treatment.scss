@@ -35,7 +35,7 @@
                         margin-bottom: 30px;
                     }
                     .text_box{
-                        font-size: 14px;
+                        font-size: 16px;
                         color:#fff;
                         padding: 25px 0px;
                         width: 450px;
@@ -108,7 +108,7 @@
             width: 565px;
             height: 350px;
             padding: 215px 45px 0px 45px;
-            font-size:15px;
+            font-size:16px;
             line-height: 30px;
             color:#666666;
             box-sizing: border-box;
@@ -134,13 +134,17 @@
                     color: #003a95;
                     display: inline-block;
                     margin-right: 10px;
+                    div{
+                        font-size: 30px;
+                        display: inline;
+                    }
                 }
                 span{
                     font-size: 15px;
                     color: #003a95;
                 }
                 .sp_introduction_text{
-                    font-size: 16px;
+                    font-size: 18px;
                     color:#003a95;
                     display: inline-block;
                     margin-left: 10px;
@@ -159,7 +163,7 @@
             }
             .graphic_introduction_s{
                 width: 555px;
-                border: 1px solid #ddd;
+                border: 1px solid #ababab;
                 float: right;
                 padding: 65px;
                 box-sizing: border-box;
@@ -175,12 +179,13 @@
                     float: left;
                     width: 100px;
                     text-align: center;
-                    font-size: 16px;
+                    font-size: 18px;
                     color: #666666;
+                    font-weight: bold;
                 }
                 .graphic_introduction_title{
                     font-weight: bold;
-                    font-size: 16px;
+                    font-size: 18px;
                     color:#666666;
                     margin-left: 100px;
                 }
@@ -246,7 +251,7 @@
             }
             .step_name{
                 position: absolute;
-                font-size: 20px;
+                font-size: 19px;
                 color: #003a95;
             }
             .step_name_1{
@@ -287,4 +292,11 @@
 
 
 
+}
+
+.pc_change_line{
+    display: block !important;
+}
+.m_change_line{
+    display: none;
 }

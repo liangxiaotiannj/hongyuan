@@ -31,15 +31,16 @@
                     padding-left: 50px;
                     .banner_title{
                         font-size: 30px;
+                        font-weight: bold;
                         color:#fff;
                         margin-bottom: 30px;
                     }
                     .first_text{
-                        font-size: 18px;
+                        font-size: 24px;
                         color:#fff;
                     }
                     .text_box{
-                        font-size: 14px;
+                        font-size: 16px;
                         color:#fff;
                         width: 450px;
                         line-height: 30px;
@@ -48,7 +49,7 @@
                         height: 30px;
                     }
                     .small_text{
-                        font-size: 13px;
+                        font-size: 16px;
                         line-height: 24px;
                         margin-bottom: 15px;
                     }
@@ -69,6 +70,8 @@
                     width: 400px !important;
                     box-sizing: border-box;
                     padding: 25px 5px !important;
+                    font-size: 24px !important;
+                    line-height: 40px !important;
                 }
             }
         }
@@ -89,7 +92,7 @@
         height: 60%;
         left: 0px;
         bottom:0px;
-        background:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.2));
+        background:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.07));
         z-index: 10;
     }
     .brief_introduction{
@@ -163,13 +166,13 @@
                     color: #003a95;
                 }
                 .sp_introduction_text{
-                    font-size: 16px;
+                    font-size: 18px;
                     color:#003a95;
                     display: inline-block;
                     margin-left: 10px;
                 }
                 .sp_introduction_text_normal{
-                    margin-left: 0px;
+                    margin: 10px 0 10px 0; 
                 }
             }
         }
@@ -212,7 +215,7 @@
                 }
                 .graphic_introduction_title{
                     font-weight: bold;
-                    font-size: 16px;
+                    font-size: 18px;
                     color:#666666;
                 }
                 .graphic_introduction_line{
@@ -227,6 +230,10 @@
                     font-size: 14px;
                     line-height: 24px;
                     color:#666666;
+
+                    .m_hide{
+                        font-size: 14px;
+                    }
                 }
             }
         }
@@ -280,4 +287,11 @@
 
 
 
+}
+
+.pc_change_line{
+    display: block !important;
+}
+.m_change_line{
+    display: none;
 }

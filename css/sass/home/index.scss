@@ -79,17 +79,29 @@ footer{
         max-width: 1200px;
         margin: 0 auto;
         padding-top: 60px;
-        
         .pc_menu{
             float: right;
             margin-top: 30px;
             cursor: pointer;
             width: 50px;
+            position: relative;
             img{
                 display: block;
                 height: 4px;
                 margin-bottom: 5px;
                 width: 100%;
+            }
+            
+            .pc_menu_text{
+                font-size: 15px;
+                font-weight: bold;
+                letter-spacing: 2px;
+                float: right;
+                display: block;
+                position: absolute;
+                left: -70px;
+                top:3px;
+
             }
         }
     }
@@ -113,7 +125,7 @@ footer{
         font-size: 72px;
         margin-top: 230px;
         margin-bottom: 50px;
-
+        letter-spacing: 4px;
         position: relative;
     }
     .banner_title_1{
@@ -126,11 +138,13 @@ footer{
         font-weight: bold;
         font-size: 30px;
         color:#000000;
+        letter-spacing: 2px;
         margin-bottom: 20px;
     }
     .banner_text_2{
         font-weight: normal;
         font-size: 16px;
+        letter-spacing: 1px;
         color: #000000;
     }
 }
@@ -160,4 +174,16 @@ footer{
     background: #003a95;
     z-index: 100;
     display: none;
+}
+.items_list .li{
+    width: 120px !important;
+    font-size: 24px !important;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+.li_items a{
+    font-size: 16px !important;
+    height: 35px !important;
+    line-height: 35px !important;
 }

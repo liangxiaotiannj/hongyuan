@@ -37,7 +37,7 @@
                     }
                     .text_box{
                         font-size: 14px;
-                        color:#000;
+                        color:#666666;
                         padding: 20px 0px;
                         line-height: 24px;
                         border-top: 1px solid #000;
@@ -101,6 +101,7 @@
             font-size: 14px;
             color: #666666;
             padding: 10px 5px;
+            letter-spacing: 1px;
         }
     }
 
@@ -119,6 +120,13 @@
                     font-size: 18px;
                     font-weight: bold;
                     color: #003a95;
+                    display: flex;
+                    div{
+                        font-size: 18px;
+                    }
+                    .line_round{
+                        margin-right: 5px;
+                    }
                 }
                 .sp_introduction_text{
                     font-size: 12px;
@@ -148,6 +156,7 @@
                     text-align: center;
                     font-size: 16px;
                     color: #666666;
+                    font-weight: bold;
                 }
                 .graphic_introduction_title{
                     font-weight: bold;
@@ -162,7 +171,7 @@
                 
                 }
                 .graphic_introduction_text{
-                    font-size: 14px;
+                    font-size: 12px;
                     line-height: 24px;
                     color:#666666;
                 }
@@ -267,4 +276,11 @@
         }
     }
 
+}
+
+.pc_change_line{
+    display: none;
+}
+.m_change_line{
+    display: block !important;
 }

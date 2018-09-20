@@ -47,7 +47,7 @@
                     }
                     .text_box_2{
                         font-size: 16px;
-                        color:#fff;
+                        color:#fefefe;
                         padding: 25px 0px;
                         width: 500px;
                         line-height: 30px;
@@ -95,7 +95,7 @@
             width: 565px;
             height: 350px;
             padding: 215px 45px 0px 45px;
-            font-size:15px;
+            font-size:16px;
             line-height: 30px;
             color:#666666;
             box-sizing: border-box;
@@ -124,9 +124,10 @@
                     margin-bottom: 20px;
                 }
                 .sp_introduction_text{
-                    font-size: 16px;
+                    font-size: 18px;
                     color:#003a95;
                     display: inline-block;
+                    line-height: 30px;
                 }
             }
         }
@@ -162,7 +163,8 @@
                 padding: 45px 40px 0 40px;
                 .graphic_introduction_title{
                     font-weight: bold;
-                    font-size: 16px;
+                    font-size: 24px;
+                    margin-bottom: 10px;
                     color:#f6aea9;
                 }
                 .graphic_introduction_text{
@@ -232,6 +234,7 @@
                 .img_introduction_text{
                     font-size: 16px;
                     color:#666;
+                    line-height: 25px;
                 }
             }
         }

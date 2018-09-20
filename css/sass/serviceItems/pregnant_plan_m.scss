@@ -44,12 +44,14 @@
                         line-height: 24px;
                         border-top: 1px solid #fff;
                         border-bottom: 1px solid #fff;
+                        background: rgba(0,0,0,0.4)
                     }
                     .text_box_2{
-                        font-size: 14px;
+                        font-size: 12px;
                         color:#fff;
                         padding: 25px 0px;
-                        line-height: 30px;
+                        line-height: 25px;
+                        font-weight: bold;
                     }
                 }
                 .banner_text_box_2{
@@ -90,6 +92,7 @@
             font-size: 14px;
             color: #666666;
             padding: 10px 5px;
+            letter-spacing: 1px;
         }
     }
 

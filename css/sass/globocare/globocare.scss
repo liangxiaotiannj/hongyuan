@@ -56,12 +56,13 @@
                 .content_box_header{
                     padding-top: 50px;
                     padding-bottom: 30px;
-                    color: #fff;
+                    color: #fefefe;
                     width: 60%;
                     max-width:460px;
                     font-size: 30px;
                     letter-spacing:10px;
                     border-bottom: 2px solid #ffffff;
+                    font-weight: bold;
                 }
                 .content_box_img{
                     padding: 60px 50px;
@@ -137,6 +138,7 @@
             font-weight: bold;
             margin-bottom: 30px;
             color: #666;
+            letter-spacing: 5px;
         }
         .contact_us_box{
             padding: 80px 20px 40px 20px;
@@ -220,14 +222,18 @@
                 font-size: 24px;
                 font-weight: bold;
                 margin-bottom: 20px;
+                color: #666666;
             }
             .item_second_title{
                 font-size: 18px;
                 margin-bottom: 75px;
+                color: #666666;
             }
             .item_text{
                 font-size: 14px;
                 padding-left: 160px;
+                color: #666666;
+                line-height: 20px;
             }
         }
 
