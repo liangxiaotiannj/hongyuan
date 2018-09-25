@@ -12,7 +12,13 @@
         <link rel="stylesheet" href="/css/animate.min.css">
 		<link rel="stylesheet" href="/css/stylesheet/resources/team_m.css" media="screen and (max-width:767px)">
 		<link rel="stylesheet" href="/css/stylesheet/resources/team_pad.css" media="screen and (min-width:768px) and (max-width: 1024px)">
-		<link rel="stylesheet" href="/css/stylesheet/resources/team.css" media="screen and (min-width: 1025px)">
+        <link rel="stylesheet" href="/css/stylesheet/resources/team.css" media="screen and (min-width: 1025px)">
+        <script>
+            var toolbarConfig = [
+                {name:'医师团队',mao:'mao1'},
+                {name:'护理团队',mao:'mao2'}
+            ]
+        </script>
 </head>
 
 <body>
@@ -39,7 +45,7 @@
 
     
 
-        <div class="card_content">
+        <div class="card_content" id="mao1">
             <div class="card_content_title right wow animated fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">医师团队</div>
             <div class="img_box">
                 <img src="/images/resources/pc_physician_1.png" class="pc_status img_1 wow animated fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s" alt="">
@@ -57,7 +63,7 @@
             </div>
         </div>
 
-        <div class="card_content">
+        <div class="card_content" id="mao2">
             <div class="card_content_title left wow animated fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">护理团队</div>
             <div class="img_box">  
                 <img src="/images/resources/pc_nursing_1.png" class="pc_status img_1 wow animated fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s" alt="">

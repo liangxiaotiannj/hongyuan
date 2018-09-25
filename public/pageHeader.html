@@ -118,12 +118,13 @@
             top:0px;
             z-index: 3;
             display: inline-block;
-            width: 150px;
+            width: 180px;
             display: none;
+            text-align: left;
         }
         .li_items a{
             display: inline-block;
-            width: 100%;
+            width: 150px;
             font-size: 14px;
             color: #fff;
             text-decoration: none;
@@ -133,6 +134,7 @@
             margin-bottom: 10px;
             height: 30px;
             line-height: 30px;
+            text-align: center;
         }
         .li_items a:hover{
             background: #fff;
@@ -269,13 +271,47 @@
         }
 
 
-        
+        .header_toolbar{
+            width: 100%;
+            position: fixed;
+            z-index: 20000;
+            top: 0;
+            left: 0;
+            background: #ffffff;
+            height: 60px;
+            display: none;
+        }
+
+        .header_toolbar .toolbar_content{
+            max-width: 1200px;
+            width: 100%;
+            margin: 0 auto;
+            height: 100%;
+            padding: 0 25px;
+        }
+        .header_toolbar img{
+            margin-top: 6px;
+        }
+        .toolbar_maos{
+            float: right;
+            height: 100%;
+        }
+        .toolbar_maos span{
+            display: inline-block;
+            line-height: 60px;
+            font-size: 16px;
+            color: #003a95;
+            cursor: pointer;
+            margin: 0 30px;
+            letter-spacing: 4px;
+            /* font-weight: bold; */
+        }
     }
 
     /* pad */
     @media screen and (min-width:768px) and (max-width: 1024px){
         .showStatus{
-            display: inline-block !important;
+            display: none !important;
         }
         .pageHeader{
             width: 100%;
@@ -520,6 +556,21 @@
             box-sizing: border-box;
             display: none;
         }
+
+        .header_toolbar{
+            display: none;
+            height: 0;
+            overflow: hidden;
+        }
+
+        .header_toolbar .toolbar_content{
+        }
+        .header_toolbar img{
+        }
+        .toolbar_maos{
+        }
+        .toolbar_maos span{
+        }
     }
 
     /* m */
@@ -540,8 +591,8 @@
             position: relative;
         }
         .pageHeader .logo{
-            margin-top: 5px;
-            width: 30px;
+            margin-top: 9px;
+            width: 25px;
         }
         .header_action_box{
             display: none;
@@ -771,10 +822,25 @@
             box-sizing: border-box;
             display: none;
         }
+
+        .header_toolbar{
+            display: none;
+            height: 0;
+            overflow: hidden;
+        }
+
+        .header_toolbar .toolbar_content{
+        }
+        .header_toolbar img{
+        }
+        .toolbar_maos{
+        }
+        .toolbar_maos span{
+        }
     }
 </style>
 
-<div class="pageHeader">
+<div class="pageHeader wow animated fadeInUp" data-wow-duration=".1s" data-wow-delay="0.1s">
     <div class="header_container">
         <a href="/index.html">
         <img class="logo" src="/images/serviceItems/international_medical_treatment/logo.png" alt="">
@@ -840,8 +906,17 @@
         </div>
     </div>
 </div>
+<!-- 锚点工具栏 -->
+<div class="header_toolbar wow animated fadeInUp" data-wow-duration=".1s" data-wow-delay="0.1s">
+    <div class="toolbar_content">
+        <a href="/index.html"><img src="/images/home/toolbar_logo.png" alt=""></a>
+        <div class="toolbar_maos" id="toolbarMaos">
 
+        </div>
+    </div>
+</div>
 
+<!-- 用户登录 -->
 <div class="user_box">
     <div class="user_box_fz">
         <img src="/images/home/close.png" alt="" class="user_box_close" onclick="closeUserBox()">
@@ -914,7 +989,7 @@ function closeMeun(){
     $('.menu_item_box').width(100)
     $('.li_items').hide()
 
-    if(document.body.clientWidth<768){
+    if(document.body.clientWidth<1024){
             
     }else{
         var isFunction = false
@@ -933,6 +1008,13 @@ $('.has_m_second').click(function(){
     $('.menu_item_box').width(230)
     $('.li_items').hide()
     $(this).find('.li_items').show()
+})
+
+$('.has_m_second').hover(function(){
+    $('.li_items').hide()
+    $(this).find('.li_items').show()
+},function(){
+    $('.li_items').hide()
 })
 
 $('.has_second').hover(function(){
@@ -957,7 +1039,15 @@ window.onscroll = function(){
     if(isFunction) {
         doScroll()
     }
-    
+    var isFunction = false
+    try{
+        isFunction = typeof(eval('showToolbar'))=="function"
+    }catch(e){
+
+    }
+    if(isFunction) {
+        showToolbar()
+    }
 }
 
 // 打开登录注册框

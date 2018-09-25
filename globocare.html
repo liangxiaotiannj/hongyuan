@@ -14,7 +14,14 @@
         <link rel="stylesheet" href="/css/animate.min.css">
 		<link rel="stylesheet" href="/css/stylesheet/globocare/globocare_m.css" media="screen and (max-width:767px)">
 		<link rel="stylesheet" href="/css/stylesheet/globocare/globocare_pad.css" media="screen and (min-width:768px) and (max-width: 1024px)">
-		<link rel="stylesheet" href="/css/stylesheet/globocare/globocare.css" media="screen and (min-width: 1025px)">
+        <link rel="stylesheet" href="/css/stylesheet/globocare/globocare.css" media="screen and (min-width: 1025px)">
+        <script>
+            var toolbarConfig = [
+                {name:'公司简介',mao:'companyInfo'},
+                {name:'鸿愿历程',mao:'history'},
+                {name:'联系我们',mao:'contactUs'}
+            ]
+        </script>
 </head>
 
 <body>
@@ -44,7 +51,7 @@
         </div>
 
         <!-- 公司简介 -->
-        <div class="brief_introduction_box">
+        <div class="brief_introduction_box" id="companyInfo">
             <div class="brief_introduction_header wow animated fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">公司简介</div>
             <div class="brief_introduction_content">
                 <div class="brief_introduction_text wow animated fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
@@ -91,7 +98,7 @@
         </div>
 
         <!-- banner2 -->
-        <div class="img_container">
+        <div class="img_container" id="history">
             <img class="pc_status" src="/images/globocare/banner_2.png" alt="">
             <div class="banner_cover_box">
                 <div class="banner_cover">
@@ -110,7 +117,7 @@
         <div class="embed_container m_status pad_status"></div>
 
         <!-- 联系我们 -->
-        <div class="contact_us">
+        <div class="contact_us" id="contactUs">
             <div class="contact_us_header">联系我们</div>
             <div class="contact_us_box">
                 <div class="contact_us_type">

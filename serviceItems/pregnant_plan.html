@@ -13,7 +13,13 @@
         <link rel="stylesheet" href="/css/animate.min.css">
 		<link rel="stylesheet" href="/css/stylesheet/serviceItems/pregnant_plan_m.css" media="screen and (max-width:767px)">
 		<link rel="stylesheet" href="/css/stylesheet/serviceItems/pregnant_plan_pad.css" media="screen and (min-width:768px) and (max-width: 1024px)">
-		<link rel="stylesheet" href="/css/stylesheet/serviceItems/pregnant_plan.css" media="screen and (min-width: 1025px)">
+        <link rel="stylesheet" href="/css/stylesheet/serviceItems/pregnant_plan.css" media="screen and (min-width: 1025px)">
+        <script>
+            var toolbarConfig = [
+                {name:'赴美冻卵',mao:'mao1'},
+                {name:'第三方辅助生殖方案',mao:'mao2'}
+            ]
+        </script>
 </head>
 
 <body>
@@ -35,7 +41,7 @@
             </div>
         </div>
 
-        <div class="content">
+        <div class="content" id="mao1">
         <!-- 简介 -->  
             <div class="brief_introduction">
                 <div class="brief_introduction_header wow animated fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
@@ -132,7 +138,7 @@
 
 
 
-        <div class="content content_add">
+        <div class="content content_add" id="mao2">
             <div class="brief_introduction">
                 <div class="brief_introduction_header wow animated fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
                         第三方辅助生殖方案

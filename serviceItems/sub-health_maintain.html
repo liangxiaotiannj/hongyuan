@@ -7,13 +7,19 @@
 		<!--<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />-->
 		<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
 		<meta name="apple-mobile-web-app-capable" content="yes" />
-        <title>服务项目-幸孕计划</title>
+        <title>服务项目-亚健康维护</title>
         <link rel="shortcut icon " type="images/x-icon" href="/images/home/favicon.ico">
         <link rel="stylesheet" href="/css/stylesheet/common.css">
         <link rel="stylesheet" href="/css/animate.min.css">
 		<link rel="stylesheet" href="/css/stylesheet/serviceItems/sub-health_maintain_m.css" media="screen and (max-width:767px)">
 		<link rel="stylesheet" href="/css/stylesheet/serviceItems/sub-health_maintain_pad.css" media="screen and (min-width:768px) and (max-width: 1024px)">
-		<link rel="stylesheet" href="/css/stylesheet/serviceItems/sub-health_maintain.css" media="screen and (min-width: 1025px)">
+        <link rel="stylesheet" href="/css/stylesheet/serviceItems/sub-health_maintain.css" media="screen and (min-width: 1025px)">
+        <script>
+            var toolbarConfig = [
+                {name:'干细胞',mao:'mao1'},
+                {name:'免疫细胞',mao:'mao2'}
+            ]
+        </script>
 </head>
 
 <body>
@@ -48,7 +54,7 @@
 
         <div class="content">
         <!-- 简介 -->  
-            <div class="brief_introduction">
+            <div class="brief_introduction" id="mao1">
                 <div class="brief_introduction_header wow animated fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
                         干细胞疗法
                 </div>
@@ -73,7 +79,7 @@
                 <div class="bottom_line"></div>
             </div>
             <!-- 简介2 -->
-            <div class="brief_introduction">
+            <div class="brief_introduction" id="mao2">
                 <div class="brief_introduction_header wow animated fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
                         免疫细胞疗法
                 </div>

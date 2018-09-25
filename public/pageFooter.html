@@ -114,16 +114,139 @@
 .m_link_box{
     display: none;
 }
+
+.leaving_message_box{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    z-index: 100000;
+    overflow: hidden;
+    display: none;
+}
+
+.leaving_message_box .leaving_message_body{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.leaving_message_box .leaving_message_body .leaving_message_content{
+    width: 951px;
+    height: 700px;
+    background: url('/images/home/leaving_message.png') no-repeat;
+    background-size:cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -350px;
+    margin-left: -475px;
+}
+.leaving_message_box .leaving_message_body .leaving_message_content .leaving_message_padding{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 15px 15px 15px 0px;
+    position: relative;
+}
+.leaving_message_padding img{
+    position: absolute;
+    top:-30px;
+    right: -30px;
+    cursor: pointer;
+}
+.leaving_message_padding form{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 25px 120px 25px 145px;
+}
+
+.leaving_message_padding form .form_header{
+font-size: 30px;
+color: #003a95;
+padding-bottom: 10px;
+border-bottom: 2px solid #003a95;
+letter-spacing: 5px;
+}
+.leaving_message_padding form .form_content{
+    border: 0px;
+    width: 100%;
+    margin: 10px 0px;
+}
+.leaving_message_padding form .form_content .left_td{
+    width: 100px;
+    font-size: 18px;
+    color: #666666;
+    text-align: right;
+    padding: 10px;
+
+    vertical-align: top;
+}
+
+.leaving_message_padding form .form_content .right_td{
+    text-align: left;
+}
+
+.leaving_message_padding form .form_content .right_td input{
+    color: #a7a7a7;
+    background: #eeeeee;
+    font-size: 18px;
+    box-sizing: border-box;
+    width: 100%;
+    outline: none;
+    border: 1px solid #ddd;
+    padding:5px 10px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.leaving_message_padding form .form_content .right_td textarea{
+    color: #a7a7a7;
+    background: #eeeeee;
+    font-size: 18px;
+    box-sizing: border-box;
+    width: 100%;
+    outline: none;
+    border: 1px solid #ddd;
+    padding:5px 10px;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.leaving_message_padding form .submit_btn_box{
+    border-top: 2px solid #003a95;
+    padding-top: 10px;
+}
+.leaving_message_padding form .submit_btn_box .submit_btn{
+    width: 200px;
+    height: 45px;
+    background: #003a95;
+    color: #fff;
+    font-size: 18px;
+    outline: none;
+    border: 0px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 125px;
+    margin-top: 20px;
+}
+
 }
     
 /* pad */
 @media screen and (min-width:768px) and (max-width: 1024px){
     .contact_type_box{
+        height: 0;
         display: none;
+        overflow: hidden;
     }
     .page_footer{
         width: 100%;
-        height: 60px;
+        height: 45px;
         background: #003a95;
     }
     .page_footer_container{
@@ -134,7 +257,7 @@
     }
     .page_footer_container .m_link_box{
         text-align: center;
-        padding: 15px 0px;
+        padding: 10px 0px;
     }
     .m_link_box a{
         color: #fff;
@@ -160,6 +283,11 @@
     .sp_icon{
         width: 15px !important;
     }    
+    .leaving_message_box{
+        display: none;
+        overflow: hidden;
+        height: 0px;
+    }
 }
     
 /* m */
@@ -213,6 +341,11 @@
     .sp_icon{
         width: 15px !important;
     }
+    .leaving_message_box{
+        display: none;
+        overflow: hidden;
+        height: 0px;
+    }
 }
 
 </style>
@@ -258,11 +391,59 @@
 		</div>
 		<div class="contact_type_icon icon_border_bottom">
 			<img src="/images/home/msg.png" alt="">
-				<div class="content_type content_type_1 wow animated fadeInRight" data-wow-duration=".2s" data-wow-delay="0.1s">
+				<div class="content_type content_type_1 wow animated fadeInRight" data-wow-duration=".2s" data-wow-delay="0.1s" onclick="openLeavingMessageBox()">
 						留言咨询
 				</div>
 		</div>
 </div>
+<!-- 留言咨询 -->
+<div class="leaving_message_box wow animated fadeInUp" data-wow-duration="0.1s" data-wow-delay="0.1s">
+    <div class="leaving_message_body">
+        <div class="leaving_message_content">
+           <div class="leaving_message_padding">
+                <img src="/images/home/close.png" alt="" onclick="closeLeavingMessageBox()">
+                <form action="">
+                    <div class="form_header">
+                            留言咨询
+                    </div>
+                    <table class="form_content">
+                        <tr>
+                            <td class="left_td">姓名：</td>
+                            <td class="right_td"><input type="text"></td>
+                        </tr>
+                       <tr>
+                            <td class="left_td">性别：</td>
+                            <td class="right_td"><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td class="left_td">年龄：</td>
+                            <td class="right_td"><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td class="left_td">手机：</td>
+                            <td class="right_td"><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td class="left_td">邮箱：</td>
+                            <td class="right_td"><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td class="left_td">咨询内容：</td>
+                            <td class="right_td"><textarea name="" id="" cols="30" rows="10"></textarea></td>
+                        </tr>
+                        <tr>
+                    </table>
+                    <div class="submit_btn_box">
+                        <button class="submit_btn">提交</button>
+                    </div>
+                </form>
+           </div>
+           
+        </div>
+    </div>
+</div>
+
+
 <script>
     // 底部
 $('.contact_type_icon').hover(function(){
@@ -271,4 +452,12 @@ $('.contact_type_icon').hover(function(){
     $(this).find('.content_type').hide();
 })
 
+
+function openLeavingMessageBox(){
+    $('.leaving_message_box').show();
+}
+
+function closeLeavingMessageBox(){
+    $('.leaving_message_box').hide();
+}
 </script>

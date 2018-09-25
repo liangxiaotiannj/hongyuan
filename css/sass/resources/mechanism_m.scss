@@ -13,7 +13,8 @@
         box-sizing: border-box;
         background: #003a95;
         overflow: hidden;
-        padding: 40px 0px ;
+        // padding: 40px 0px ;
+        padding-bottom: 80px;
         .img_content{
             margin: 0 auto;
             position: relative;
@@ -22,7 +23,7 @@
             }
             .banner_text_box{
                 position: absolute;
-                bottom:30px;
+                bottom:-70px;
                 left: 0px;
                 padding-left: 15px;
                 box-sizing: border-box;

@@ -13,7 +13,13 @@
         <link rel="stylesheet" href="/css/animate.min.css">
 		<link rel="stylesheet" href="/css/stylesheet/serviceItems/international_medical_treatment_m.css" media="screen and (max-width:767px)">
 		<link rel="stylesheet" href="/css/stylesheet/serviceItems/international_medical_treatment_pad.css" media="screen and (min-width:768px) and (max-width: 1024px)">
-		<link rel="stylesheet" href="/css/stylesheet/serviceItems/international_medical_treatment.css" media="screen and (min-width: 1025px)">
+        <link rel="stylesheet" href="/css/stylesheet/serviceItems/international_medical_treatment.css" media="screen and (min-width: 1025px)">
+        <script>
+            var toolbarConfig = [
+                {name:'海外就医',mao:'mao1'},
+                {name:'MSO',mao:'mao2'}
+            ]
+        </script>
 </head>
 
 <body>
@@ -36,7 +42,7 @@
             <div class="cover_img"></div>
         </div>
 
-        <div class="content content_add">
+        <div class="content content_add" id="mao1">
         <!-- 简介 -->  
             <div class="brief_introduction">
                 <div class="brief_introduction_header wow animated fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
@@ -194,7 +200,7 @@
 
 
 
-        <div class="content content_add">
+        <div class="content content_add" id="mao2">
             <div class="brief_introduction">
                 <div class="brief_introduction_header wow animated fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
                         第三方医学建议

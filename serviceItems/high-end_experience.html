@@ -13,7 +13,13 @@
         <link rel="stylesheet" href="/css/animate.min.css">
 		<link rel="stylesheet" href="/css/stylesheet/serviceItems/high-end_experience_m.css" media="screen and (max-width:767px)">
 		<link rel="stylesheet" href="/css/stylesheet/serviceItems/high-end_experience_pad.css" media="screen and (min-width:768px) and (max-width: 1024px)">
-		<link rel="stylesheet" href="/css/stylesheet/serviceItems/high-end_experience.css" media="screen and (min-width: 1025px)">
+        <link rel="stylesheet" href="/css/stylesheet/serviceItems/high-end_experience.css" media="screen and (min-width: 1025px)">
+        <script>
+            var toolbarConfig = [
+                {name:'海外体检',mao:'mao1'},
+                {name:'国内体检',mao:'mao2'}
+            ]
+        </script>
 </head>
 
 <body>
@@ -45,7 +51,7 @@
             </div>
         </div>
 
-        <div class="content">
+        <div class="content" id="mao1">
         <!-- 简介 -->  
             <div class="brief_introduction">
                 <div class="brief_introduction_header wow animated fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
@@ -189,7 +195,7 @@
 
 
 
-        <div class="content content_add">
+        <div class="content content_add" id="mao2">
             <div class="brief_introduction brief_introduction_normal">
                 <div class="brief_introduction_header wow animated fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
                         中国企业高级健检计划
