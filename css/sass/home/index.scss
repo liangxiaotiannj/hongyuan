@@ -49,13 +49,15 @@
 .pageHeader{
     background: transparent !important;
     top:70px !important;
-    display: none;
     .header_action{
         color:#000 !important;
     }
     .logo{
         display: none;
     }
+}
+.pageHeaderStatus{
+    display: none !important;
 }
 
 footer{
@@ -129,7 +131,7 @@ footer{
         position: relative;
     }
     .banner_title_1{
-        color:#fefeff;
+        color:#003a95;
     }
     .banner_title_2{
         color: #003a95;
@@ -176,7 +178,7 @@ footer{
     display: none;
 }
 .items_list .li{
-    width: 120px !important;
+    width: 130px !important;
     font-size: 24px !important;
     font-weight: bold;
     letter-spacing: 4px;

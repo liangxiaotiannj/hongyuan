@@ -23,6 +23,7 @@
         }
         .pageHeader .header_container .logo{
             margin-top: 6px;
+            width: 28px;
         }
         .pageHeader .header_container .header_action_box{
             height: 100%;
@@ -102,7 +103,7 @@
             display: inline-block;
             width: 70px;
             color:#fff;
-            margin: 10px 0px;
+            margin: 15px 0px;
             font-size: 16px;
             text-decoration: none;
             border-bottom: 1px solid transparent;
@@ -114,11 +115,11 @@
         }
         .li_items{
             position: absolute;
-            left: -170px;
+            left: -230px;
             top:0px;
             z-index: 3;
             display: inline-block;
-            width: 180px;
+            width: 250px;
             display: none;
             text-align: left;
         }
@@ -840,7 +841,7 @@
     }
 </style>
 
-<div class="pageHeader wow animated fadeInUp" data-wow-duration=".1s" data-wow-delay="0.1s">
+<div class="pageHeader pageHeaderStatus wow animated fadeInUp" data-wow-duration=".1s" data-wow-delay="0.1s">
     <div class="header_container">
         <a href="/index.html">
         <img class="logo" src="/images/serviceItems/international_medical_treatment/logo.png" alt="">
@@ -1039,15 +1040,20 @@ window.onscroll = function(){
     if(isFunction) {
         doScroll()
     }
-    var isFunction = false
-    try{
-        isFunction = typeof(eval('showToolbar'))=="function"
-    }catch(e){
 
+    if(document.body.clientWidth<1024){
+            
+        var isFunction = false
+        try{
+            isFunction = typeof(eval('showToolbar'))=="function"
+        }catch(e){
+
+        }
+        if(isFunction) {
+            showToolbar()
+        }
     }
-    if(isFunction) {
-        showToolbar()
-    }
+    
 }
 
 // 打开登录注册框

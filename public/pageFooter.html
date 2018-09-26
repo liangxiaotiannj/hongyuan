@@ -8,36 +8,42 @@
     bottom: 255px;
     z-index: 100;
     text-align: center;
-    /* background: rgba(255, 255, 255, 0.1); */
     /* background: rgba(0, 0, 0, 0.5) */
 }
 .contact_type_icon{
     width: 46px;
     height: 46px;
-    border-left: 2px solid #000000;
-    border-right: 2px solid #000000;
-    border-top: 2px solid #000000;
+    /* border-left: 2px solid transparent; */
+    /* border-right: 2px solid transparent; */
+    /* border-top: 2px solid transparent; */
     position: relative;
     cursor: pointer;
+    /* margin-bottom: 3px; */
+    background: rgba(255, 255, 255, 0.4);
+    margin-bottom: 3px;
+    border: 0px;
+    outline: none;
 }
 .contact_type_icon img{
-    margin-top:15px; 
+    /* margin-top:15px;  */
 }
 .content_type{
     position: absolute;    
-    border-left: 2px solid #000000;
-    border-bottom: 2px solid #000000;
-    border-top: 2px solid #000000;
+    border-left: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    border-top: 2px solid transparent;
     font-size: 15px;
-    right: 48px;
-    top: -2px;
+    right: 49px;
+    top: 0px;
     z-index: 100;
     box-sizing: border-box;
     text-align: center;
     display: none;
     width: 150px;
+    color: #003a95;
     /* background: rgba(255, 255, 255, 0.1); */
     letter-spacing: 1px;
+    background: rgba(255, 255, 255, 0.4);
 }
 .content_type .wx{
     font-size: 15px;
@@ -49,14 +55,14 @@
 }
 
 .content_type_1{
-    height: 50px;
+    height: 46px;
     line-height: 46px;
 }
 .content_type_2{
-    height: 146px;
+    height: 144px;
 }
 .content_type_3{
-    height: 98px;
+    height: 95px;
 }
 .content_type_3 .bx{
     width: 100%;
@@ -75,7 +81,7 @@
     display: inline-block;
     width: 20px;
     height: 2px;
-    background: #000000;
+    background: #003a95;
     left: 50%;
     top: 50%;
     margin-left: -10px;
@@ -83,7 +89,7 @@
 }
 
 .icon_border_bottom{
-    border-bottom: 2px solid #000000;
+    /* border-bottom: 2px solid transparent; */
 }
 
 .page_footer{
@@ -204,7 +210,7 @@ letter-spacing: 5px;
 }
 
 .leaving_message_padding form .form_content .right_td textarea{
-    color: #a7a7a7;
+    color: #666666;
     background: #eeeeee;
     font-size: 18px;
     box-sizing: border-box;
@@ -215,6 +221,28 @@ letter-spacing: 5px;
     border-radius: 5px;
     width: 100%;
     margin-top: 5px;
+    
+}
+
+.leaving_message_padding form .form_content .right_td textarea::-moz-placeholder {
+    color:#a7a7a7;
+    font-size:18px;
+}
+.leaving_message_padding form .form_content .right_td textarea::-webkit-placeholder {
+    color:#a7a7a7;
+    font-size:18px;
+}
+.leaving_message_padding form .form_content .right_td textarea:-moz-placeholder {
+    color:#a7a7a7;
+    font-size:18px;
+}
+.leaving_message_padding form .form_content .right_td textarea:-ms-placeholder {
+    color:#a7a7a7;
+    font-size:18px;
+}
+.leaving_message_padding form .form_content .right_td textarea::placeholder {
+    color:#a7a7a7;
+    font-size:18px;
 }
 
 .leaving_message_padding form .submit_btn_box{
@@ -356,7 +384,7 @@ letter-spacing: 5px;
         <!-- <a href="">客户案例</a> -->
         <a href="/resources/knowledge_center.html">科普中心</a>
         <a href="">友情链接</a>
-        <a href="/globocare.html" class="right_link">联系我们</a>
+        <a href="/globocare.html?mao=contactUs" class="right_link">联系我们</a>
         <div class="m_link_box">
             <a href="/globocare.html?mao=merge"><img  class="sp_icon" src="/images/serviceItems/international_medical_treatment/logo.png" alt=""><span>鸿愿健康</span></a>
             <a href="" class="cener_line"><img src="/images/serviceItems/international_medical_treatment/online.png" alt=""><span>在线咨询</span></a>
@@ -366,21 +394,21 @@ letter-spacing: 5px;
 </div>
 
 <div class="contact_type_box wow animated fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
-		<div class="contact_type_icon">
-			<img src="/images/home/online.png" alt="">
+		<button class="contact_type_icon">
+			<img src="/images/home/online_blue.png" alt="">
 			<div class="content_type content_type_1 wow animated fadeInRight" data-wow-duration=".2s" data-wow-delay="0.1s">
 				在线咨询
 			</div>
-		</div>
-		<div class="contact_type_icon">
-				<img src="/images/home/wx.png" alt="">
+		</button>
+		<button class="contact_type_icon">
+				<img src="/images/home/wx_blue.png" alt="">
 				<div class="content_type content_type_2 wow animated fadeInRight" data-wow-duration=".2s" data-wow-delay="0.1s">
 						<div class="wx">官方微信</div>
-						<img src="/images/home/wx_scan_code.png" alt="">
+						<img src="/images/home/wx_scan_code_blue.png" alt="">
 				</div>
-		</div>
-		<div class="contact_type_icon">
-			<img src="/images/home/phone.png" alt="">
+		</button>
+		<button class="contact_type_icon">
+			<img src="/images/home/phone_blue.png" alt="">
 				<div class="content_type content_type_3 wow animated fadeInRight" data-wow-duration=".2s" data-wow-delay="0.1s">
 						<div class="bx">
 							<div>电话咨询</div>
@@ -388,13 +416,13 @@ letter-spacing: 5px;
 							<div>021 6237-8399</div>
 						</div>
 				</div>
-		</div>
-		<div class="contact_type_icon icon_border_bottom">
-			<img src="/images/home/msg.png" alt="">
+		</button>
+		<button class="contact_type_icon icon_border_bottom">
+			<img src="/images/home/msg_blue.png" alt="">
 				<div class="content_type content_type_1 wow animated fadeInRight" data-wow-duration=".2s" data-wow-delay="0.1s" onclick="openLeavingMessageBox()">
 						留言咨询
 				</div>
-		</div>
+		</button>
 </div>
 <!-- 留言咨询 -->
 <div class="leaving_message_box wow animated fadeInUp" data-wow-duration="0.1s" data-wow-delay="0.1s">
@@ -429,7 +457,7 @@ letter-spacing: 5px;
                         </tr>
                         <tr>
                             <td class="left_td">咨询内容：</td>
-                            <td class="right_td"><textarea name="" id="" cols="30" rows="10"></textarea></td>
+                            <td class="right_td"><textarea name="" id="" cols="30" rows="10" placeholder="请详细描述您的健康状况或问题"></textarea></td>
                         </tr>
                         <tr>
                     </table>

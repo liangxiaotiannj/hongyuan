@@ -32,6 +32,7 @@ function jumpToPage(href){
 
 function indexOpenMenu(){
     $('.pageHeader').show();
+    $('.pageHeader').removeClass('pageHeaderStatus');
     $('.contact_type_box').hide();
     $('.index_mask').show();
     openMenu();
