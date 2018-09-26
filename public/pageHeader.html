@@ -841,7 +841,7 @@
     }
 </style>
 
-<div class="pageHeader pageHeaderStatus wow animated fadeInUp" data-wow-duration=".1s" data-wow-delay="0.1s">
+<div class="pageHeader pageHeaderStatus" data-wow-duration=".1s" data-wow-delay="0.1s">
     <div class="header_container">
         <a href="/index.html">
         <img class="logo" src="/images/serviceItems/international_medical_treatment/logo.png" alt="">
@@ -1010,13 +1010,15 @@ $('.has_m_second').click(function(){
     $('.li_items').hide()
     $(this).find('.li_items').show()
 })
+if(document.body.clientWidth>1024){
+    $('.has_m_second').hover(function(){
+        $('.li_items').hide()
+        $(this).find('.li_items').show()
+    },function(){
+        $('.li_items').hide()
+    })
+}
 
-$('.has_m_second').hover(function(){
-    $('.li_items').hide()
-    $(this).find('.li_items').show()
-},function(){
-    $('.li_items').hide()
-})
 
 $('.has_second').hover(function(){
     $(this).find('.second_menu').show()
@@ -1041,7 +1043,7 @@ window.onscroll = function(){
         doScroll()
     }
 
-    if(document.body.clientWidth<1024){
+    // if(document.body.clientWidth<1024){
             
         var isFunction = false
         try{
@@ -1052,7 +1054,7 @@ window.onscroll = function(){
         if(isFunction) {
             showToolbar()
         }
-    }
+    // }
     
 }
 

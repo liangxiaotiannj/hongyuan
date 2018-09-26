@@ -1,5 +1,18 @@
 // 页面刷新返回顶部
-window.onload = function(){setTimeout(function(){$(window).scrollTop(0)},10);$('.pageHeader').show();}
+window.onload = function(){
+  setTimeout(function(){
+    $(window).scrollTop(0)
+    window.document.documentElement.scrollTop = 0
+    window.document.body.scrollTop = 0
+  },10);
+
+  $('.pageHeader').show();
+
+  setTimeout(function(){
+    wow.init();
+  },50)
+
+}
 // 通用页面加载头部和底部
 $('header').load('/public/pageHeader.html')
 
@@ -12,16 +25,12 @@ function getUrlParams (name) {
 }
 //注册动画
 var wow = new WOW({
-    boxClass: 'wow',
-    animateClass: 'animated',
-    offset: 0,
-    mobile: true,
-    live: true
+  boxClass: 'wow',
+  animateClass: 'animated',
+  offset: 0,
+  mobile: true,
+  live: true
 });
-setTimeout(function(){
-  wow.init();
-},50)
-
 //页面锚点
 function loadToolbar(){
   if(!!toolbarConfig){
