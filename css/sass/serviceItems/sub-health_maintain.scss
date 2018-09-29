@@ -80,7 +80,7 @@
         box-sizing: border-box;
     }
     .brief_introduction{
-        margin-top: 210px;
+        margin-top: 80px;
         position: relative;
         box-sizing: border-box;
         margin-bottom: 150px;
@@ -116,7 +116,7 @@
     }
 
     .sp_introduction{
-        margin-bottom:150px; 
+        margin-bottom:120px; 
         .top_line ,.bottom_line{
             width: 50%;
             height: 1px;
@@ -154,26 +154,27 @@
     }
     .steps_1_box{
         // padding: 10px 75px 110px 75px;
-        margin-bottom: 170px;
+        margin-bottom: 120px;
         
     }
     
     .item_introduce{
         text-align: center;
-        margin-bottom: 120px;
+        margin-bottom: 80px;
         .item_introduce_header{
             font-size: 30px;
             padding-bottom: 30px;
             border-bottom: 1px solid #003a95;
             color: #003a95;
-            margin-bottom: 60px;
+            margin-bottom: 80px;
             font-weight: bold;
         }
         .py_img{
             margin-left: -40px;
         }
         .an_items_box{
-            height: 550px;
+            margin-top: 30px;
+            height: 400px;
             position: relative;
             width: 100%;
             .an_item_bull{
@@ -197,7 +198,7 @@
                 height: 150px;
                 background: linear-gradient(#f2d4c2,#e8af94);
                 left:100px;
-                top: 280px;
+                top: 150px;
                 margin-left: -75px;
                 margin-top: -75px;
                 &:hover{
@@ -212,7 +213,7 @@
                 height: 170px;
                 background: linear-gradient(#f3dacb,#e9c58f);
                 left:230px;
-                top: 360px;
+                top: 230px;
                 margin-left: -85px;
                 margin-top: -85px;
                 &:hover{
@@ -227,7 +228,7 @@
                 height: 180px;
                 background: linear-gradient(#f8f0da,#efdda8);
                 left:350px;
-                top: 240px;
+                top: 110px;
                 margin-left: -90px;
                 margin-top: -90px;
                 &:hover{
@@ -242,7 +243,7 @@
                 height: 160px;
                 background: linear-gradient(#fbf8e4,#f5f1c3);
                 left:370px;
-                top: 425px;
+                top: 295px;
                 margin-left: -80px;
                 margin-top: -80px;
                 &:hover{
@@ -257,7 +258,7 @@
                 height: 160px;
                 background: linear-gradient(#d7e4c4,#c2d7a8);
                 left:520px;
-                top: 230px;
+                top: 100px;
                 margin-left: -80px;
                 margin-top: -80px;
                 &:hover{
@@ -272,7 +273,7 @@
                 height: 165px;
                 background: linear-gradient(#f1f2de,#dee0af);
                 left:490px;
-                top: 360px;
+                top: 230px;
                 margin-left: -82px;
                 margin-top: -82px;
                 &:hover{
@@ -287,7 +288,7 @@
                 height: 200px;
                 background: linear-gradient(#badcd9,#7bc1bc);
                 left:650px;
-                top: 330px;
+                top: 200px;
                 margin-left: -100px;
                 margin-top: -100px;
                 &:hover{
@@ -302,7 +303,7 @@
                 height: 200px;
                 background: linear-gradient(#d4e6d8,#add0b4);
                 left:750px;
-                top: 200px;
+                top: 70px;
                 margin-left: -100px;
                 margin-top: -100px;
                 &:hover{
@@ -317,7 +318,7 @@
                 height: 200px;
                 background: linear-gradient(#b7ddf2,#5abde0);
                 left:820px;
-                top: 380px;
+                top: 250px;
                 margin-left: -100px;
                 margin-top: -100px;
                 &:hover{
@@ -332,7 +333,7 @@
                 height: 200px;
                 background: linear-gradient(#ccdded,#9fc2df);
                 left:930px;
-                top: 250px;
+                top: 120px;
                 margin-left: -100px;
                 margin-top: -100px;
                 &:hover{
@@ -347,7 +348,7 @@
                 height: 170px;
                 background: linear-gradient(#dee1ee,#b5bed8);
                 left:1010px;
-                top: 380px;
+                top: 250px;
                 margin-left: -75px;
                 margin-top: -75px;
                 &:hover{
